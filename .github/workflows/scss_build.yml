@@ -1,0 +1,10 @@
+name: SCSS Build
+on: [push, pull_request]
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Compile with Gulp
+        uses: elstudio/actions-js-build/build@v2

@@ -1,0 +1,98 @@
+/* ==================================
+   #POPOVER
+   ================================== */
+
+.vl-c-popover {
+  position: relative;
+  display: inline-block;
+}
+
+  .vl-c-popover__button {
+    @include vl-font-size($vl-base);
+    font-weight: $vl-regular;
+    text-align: left;
+    border: 0;
+    padding: $vl-unit-tiny/2 $vl-unit-tiny;
+    border-radius: $vl-radius;
+
+    &,
+    &:visited {
+      color: $vl-action-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $vl-action-hover-color;
+      background-color: $vl-neutral-lightest;
+    }
+
+    &:focus {
+      outline: $vl-outline;
+    }
+
+    .vl-c-popover--outline & {
+      background-color: $vl-white;
+      border: 1px solid $vl-neutral-lighter;
+    }
+
+    .vl-c-popover--outline &,
+    .vl-c-popover--outline &:visited {
+      color: $vl-neutral-darker;
+    }
+
+    .vl-c-popover--outline &:hover,
+    .vl-c-popover--outline &:focus {
+      color: $vl-neutral-dark;
+      background-color: $vl-neutral-lightest;
+    }
+  }
+
+  .vl-c-popover__menu {
+    position: absolute;
+    right: 0;
+    background-color: $vl-white;
+    min-width: 100%;
+    box-shadow: 0 0 $vl-unit-tiny rgba($vl-neutral-dark,.2), 0 0 $vl-unit rgba($vl-neutral-dark,.1);
+
+
+    .vl-c-popover--outline & {
+      left: 0;
+      right: auto;
+    }
+  }
+
+  .vl-c-popover__menu[role^="menuitem"] {
+    display: block;
+    min-width: 100%;
+    white-space: nowrap;
+  }
+
+  .vl-c-popover__item {
+    display: block;
+    padding: $vl-unit-tiny $vl-unit-small;
+    white-space: nowrap;
+
+    &,
+    &:visited {
+      color: $vl-neutral-darker;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: $vl-neutral-lightest;
+    }
+
+    &:hover,
+    &:focus {
+      color: $vl-neutral-dark;
+    }
+
+    &:focus {
+      outline: $vl-outline-border/2 dashed $vl-neutral-light;
+      outline-offset: -$vl-outline-border * 2;
+    }
+  }
+
+  // .vl-c-popover__item[aria-checked="true"]::before {
+
+  // }
