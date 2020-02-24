@@ -14,6 +14,10 @@
  *   .au-u-h6 {}
  */
 
+
+/* Variables
+  ========================================================================== */
+
 $au-headings: (
   'h1': $au-h1,
   'h2': $au-h2,
@@ -23,6 +27,9 @@ $au-headings: (
   'h6': $au-h6
 ) !default;
 
+
+/* Generate utility classes
+  ========================================================================== */
 @each $heading-namespace, $heading in $au-headings {
   .au-u-#{$heading-namespace} {
     @include vl-font-size($heading, $important: true);

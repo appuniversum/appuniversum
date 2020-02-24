@@ -15,6 +15,9 @@
  *   .au-u-padding-vertical-small {}
  */
 
+/* Variables
+  ========================================================================== */
+
 $au-spacing-directions: (
   null: null,
   "-top": "-top",
@@ -38,6 +41,10 @@ $au-spacing-sizes: (
   "-huge": $au-unit-huge,
   "-none": 0
 ) !default;
+
+
+/* Generate utility classes
+  ========================================================================== */
 
 @each $property-namespace, $property in $au-spacing-properties {
   @each $direction-namespace, $direction-rules in $au-spacing-directions {

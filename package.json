@@ -5,14 +5,14 @@
   "main": "appuniversum.scss",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/app-universum/app-universum"
+    "url": "git+https://github.com/appuniversum/app-universum"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/app-universum/app-universum/issues"
+    "url": "https://github.com/appuniversum/app-universum/issues"
   },
-  "homepage": "https://github.com/app-universum/app-universum#readme",
+  "homepage": "https://github.com/appuniversum/app-universum#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "cssnano": "^4.1.10",

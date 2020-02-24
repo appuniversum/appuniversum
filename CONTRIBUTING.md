@@ -7,7 +7,7 @@ Following these guidelines helps to communicate that you respect the time of the
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
 # Ground Rules
-- Read and follow our [coding standards](https://appuniversum.netlify.com/documentation/coding-standards/)
+- Read and follow our [coding standards](https://appuniversum.github.io/documentation/coding-standards/)
 - Comply to the [WCAG2.0 AA](https://www.w3.org/TR/WCAG20/) specifications
 - Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
 
@@ -28,9 +28,3 @@ When filing an issue, make sure to answer these five questions:
 3. What did you do?
 4. What did you expect to see?
 5. What did you see instead?
-
-# Code review process
-@TODO
-
-# Community
-@TODO

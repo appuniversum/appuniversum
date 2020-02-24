@@ -12,9 +12,9 @@
  * with width utilities, for example:
  *
  *   <div class="vl-o-grid">
- *     <div class="vl-o-grid__item  u-1-of-2">
+ *     <div class="vl-o-grid__item u-1-2">
  *     </div>
- *     <div class="vl-o-grid__item  u-1-of-2">
+ *     <div class="vl-o-grid__item u-1-2">
  *     </div>
  *   </div>
  *
@@ -23,11 +23,11 @@
  * systems:
  *
  *   <div class="vl-o-grid">
- *     <div class="vl-o-grid__item  u-1/1  u-1/3@medium">
+ *     <div class="vl-o-grid__item u-1-1 u-1-3@medium">
  *     </div>
- *     <div class="vl-o-grid__item  u-1/2  u-1/3@medium">
+ *     <div class="vl-o-grid__item u-1-2 u-1-3@medium">
  *     </div>
- *     <div class="vl-o-grid__item  u-1/2  u-1/3@medium">
+ *     <div class="vl-o-grid__item u-1-2 u-1-3@medium">
  *     </div>
  *   </div>
  *
@@ -39,21 +39,18 @@
  * We can also manipulate entire layout systems by adding a series of modifiers
  * to the `.au-o-grid` block. For example:
  *
- *   <div class="vl-o-grid  vl-o-grid--reverse">
+ *   <div class="vl-o-grid vl-o-grid--reverse">
  *
  * This will reverse the displayed order of the system so that it runs in the
  * opposite order to our source, effectively flipping the system over.
  *
- *   <div class="vl-o-grid  vl-o-grid--[right|center]">
+ *   <div class="vl-o-grid vl-o-grid--[right|center]">
  *
  * This will cause the system to fill up from either the centre or the right
  * hand side. Default behaviour is to fill up the layout system from the left.
  *
  * There are plenty more options available to us: explore them below.
  */
-
-
-
 
 
 /* Default/mandatory classes.
@@ -70,7 +67,6 @@
   display: flex; /* [3] */
   align-items: stretch; /* [3] */
   flex-wrap: wrap; /* [3] */
-  margin:  0; /* [2] */
   padding: 0; /* [2] */
   list-style: none; /* [1] */
   margin: -$au-unit; /* [4] */
@@ -88,9 +84,6 @@
   }
 
 
-
-
-
 /* Gutter size modifiers.
    ========================================================================== */
 
@@ -100,9 +93,7 @@
   > .au-o-grid__item {
     padding: $au-unit-tiny;
   }
-
 }
-
 
 .au-o-grid--small {
   margin: -$au-unit-small;
@@ -110,9 +101,7 @@
   > .au-o-grid__item {
     padding: $au-unit-small;
   }
-
 }
-
 
 .au-o-grid--large {
   margin: -$au-unit-large;
@@ -120,9 +109,7 @@
   > .au-o-grid__item {
     padding: $au-unit-large;
   }
-
 }
-
 
 .au-o-grid--huge {
   margin: -$au-unit-huge;
@@ -130,9 +117,7 @@
   > .au-o-grid__item {
     padding: $au-unit-huge;
   }
-
 }
-
 
 .au-o-grid--flush {
   margin: 0;
@@ -140,11 +125,7 @@
   > .au-o-grid__item {
     padding: 0;
   }
-
 }
-
-
-
 
 
 /* Vertical alignment modifiers.
@@ -155,28 +136,20 @@
  */
 
 .au-o-grid--middle {
-
   > .au-o-grid__item {
     align-self: center;
   }
-
 }
-
 
 /**
  * Align all grid items to the bottoms of each other.
  */
 
 .au-o-grid--bottom {
-
   > .au-o-grid__item {
     align-self: flex-end;
   }
-
 }
-
-
-
 
 
 /* Fill order modifiers.
@@ -195,7 +168,7 @@
  * Fill up the grid system from the right-hand side.
  */
 
- .au-o-grid--right {
+.au-o-grid--right {
   justify-content: flex-end;
 }
 

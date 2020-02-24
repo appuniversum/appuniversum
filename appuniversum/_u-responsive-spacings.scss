@@ -47,7 +47,8 @@
  * filesize!
  */
 
-
+/* Generate utility classes
+  ========================================================================== */
 
 // The responsive spacings just make sense and work properly when the ‘normal’
 // spacings are included, too. In case they're not, we set `_u-spacings`
@@ -73,52 +74,33 @@ $au-spacing-directions: null !default;
 // escaped with a `\`. In the markup though, you write your classes without the
 // backslash (e.g. `vl-u-margin-bottom@small`).
 $au-widths-breakpoint-separator: \@ !default;
-
-
-
 $au-responsive-spacing-directions: null !default;
-
 $au-responsive-spacing-properties: null !default;
-
 $au-responsive-spacing-sizes: null !default;
 
 
+/* Generate utility classes
+  ========================================================================== */
 
 /* stylelint-disable max-nesting-depth */
-
 // Don't output anything if no responsive spacings are defined.
 @if ($au-responsive-spacing-properties != null) {
-
   @each $property-namespace, $property in $au-responsive-spacing-properties {
-
     @each $direction-namespace, $direction-rules in $au-responsive-spacing-directions {
-
       @each $size-namespace, $size in $au-responsive-spacing-sizes {
-
         @each $au-bp-name, $au-bp-value in $mq-breakpoints {
-
           @include mq($from: $au-bp-name) {
-
             .au-u-#{$property-namespace}#{$direction-namespace}#{$size-namespace}#{$au-widths-breakpoint-separator}#{$au-bp-name} {
-
               @each $direction in $direction-rules {
                 #{$property}#{$direction}: $size !important;
               }
-
             }
-
           }
-
         }
-
       }
-
     }
-
   }
-
 }
 
 /* stylelint-enable max-nesting-depth */
-
 }
