@@ -13,10 +13,9 @@
  * TOOLS: Mixins
  * GENERIC: Reset, global box-sizing and font-styles
  * ELEMENTS: Plain html tag styling
- * OBJECTS: OOCSS unstyled objects (namespace: '.vl-o-...')
- * COMPONENTS: Components (namespace: '.vl-c-...')
- * ADAPTOR: Map our namespaced components to webuniversum
- * UTILITIES: Single function helper classes (namespace: '.vl-u-...')
+ * OBJECTS: OOCSS unstyled objects (namespace: '.au-o-...')
+ * COMPONENTS: Components (namespace: '.au-c-...')
+ * UTILITIES: Single function helper classes (namespace: '.au-u-...')
  */
 
 
@@ -39,8 +38,6 @@
 
 // ELEMENTS
 @import "appuniversum/e-page";
-@import "appuniversum/e-images";
-@import "appuniversum/e-tables";
 
 
 // OBJECTS
@@ -56,7 +53,7 @@
 @import "appuniversum/c-button-link";
 @import "appuniversum/c-link";
 @import "appuniversum/c-icon";
-@import "appuniversum/c-horizontal-list";
+@import "appuniversum/c-list-horizontal";
 @import "appuniversum/c-popover";
 @import "appuniversum/c-header";
 

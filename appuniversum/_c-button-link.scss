@@ -10,11 +10,11 @@
 /* Component
    ========================================================================== */
 
-.vl-c-button-link {
-  @include vl-font-size($vl-base,.7);
-  font-family: $vl-font;
-  font-weight: $vl-regular;
-  padding: $vl-unit-tiny;
+.au-c-button-link {
+  @include vl-font-size($au-base,.7);
+  font-family: $au-font;
+  font-weight: $au-regular;
+  padding: $au-unit-tiny;
   border: 0;
   outline: 0;
   appearance: none;
@@ -25,22 +25,22 @@
   white-space: nowrap;
   text-underline-offset: .3ex;
   text-decoration: underline;
-  text-decoration-color: $vl-action-underline;
-  color: $vl-action-color;
+  text-decoration-color: $au-action-underline;
+  color: $au-action-color;
   background-color: transparent;
-  transition: color $vl-transition;
+  transition: color $au-transition;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    color: $vl-action-hover-color;
+    color: $au-action-hover-color;
     background-color: transparent;
     text-decoration: underline;
-    text-decoration-color: $vl-action-underline-hover;
+    text-decoration-color: $au-action-underline-hover;
   }
 
   &:focus {
-    outline: $vl-outline;
+    outline: $au-outline;
   }
 
   &:active {
@@ -52,17 +52,17 @@
   }
 }
 
-.vl-c-button-link--action {
-  color: $vl-neutral-darker;
-  text-decoration-color: $vl-neutral-light;
+.au-c-button-link--action {
+  color: $au-neutral-darker;
+  text-decoration-color: $au-neutral-light;
 
   &:hover,
   &:focus {
-    color: $vl-action-hover-color;
-    text-decoration-color: $vl-action-underline-hover;
+    color: $au-action-hover-color;
+    text-decoration-color: $au-action-underline-hover;
   }
 }
 
-.vl-c-button-link--block {
+.au-c-button-link--block {
   width: 100%;
 }

@@ -25,7 +25,7 @@
 
 @mixin vl-font-size($font-size, $line-height: auto, $modifier: 0, $important: false) {
   // Set unit-tiny fallback size
-  $vl-unit-tiny: .6rem !default;
+  $au-unit-tiny: .6rem !default;
 
   // Check if font-size is a number and a rem unit
   @if (type-of($font-size) == number) {
@@ -37,12 +37,12 @@
   }
 
   // Check if unit is a number and a rem unit
-  @if (type-of($vl-unit-tiny) == number) {
-    @if (unit($vl-unit-tiny) != "rem") {
-      @error "`#{$vl-unit-tiny}` needs to be a rem value.";
+  @if (type-of($au-unit-tiny) == number) {
+    @if (unit($au-unit-tiny) != "rem") {
+      @error "`#{$au-unit-tiny}` needs to be a rem value.";
     }
   } @else {
-    @error "`#{$vl-unit-tiny}` needs to be a number.";
+    @error "`#{$au-unit-tiny}` needs to be a number.";
   }
 
   @if ($important == true) {
@@ -57,7 +57,7 @@
   $font-size-unitless: ($font-size / ($font-size * 0 + 1)) * 10;
 
   // Strip rem units from unit-tiny and set as baseline
-  $baseline: ($vl-unit-tiny / ($font-size * 0 + 1)) * 10;
+  $baseline: ($au-unit-tiny / ($font-size * 0 + 1)) * 10;
 
   // Provide pixel fallback for old IE
   font-size: $font-size-unitless + px $important;

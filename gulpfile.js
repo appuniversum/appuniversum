@@ -23,14 +23,8 @@ var rename       = require("gulp-rename");
 // ---
 function css() {
   return gulp.src("appuniversum.scss")
-    .pipe(sass({ outputStyle: "expanded" }))
-    .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest("./"))
-}
-
-function productionCss() {
-  return gulp.src("appuniversum.scss")
     .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(gulp.dest("./"))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(rename((path) => {
       path.basename += ".min";
@@ -42,8 +36,8 @@ function productionCss() {
 // Watch folders for changes
 // ---
 function watchFiles() {
-  gulp.watch(project.buildSrc + "/appuniversum/**/*", gulp.parallel('css'));
-  gulp.watch("./appuniversum.scss", gulp.parallel('appCss'));
+  gulp.watch("./appuniversum/**/*", gulp.parallel('css'));
+  gulp.watch("./appuniversum.scss", gulp.parallel('css'));
 }
 
 
@@ -51,19 +45,17 @@ function watchFiles() {
 // Tasks
 // ---
 gulp.task('css', css);
-gulp.task('productionCss', productionCss);
 gulp.task('watchFiles', watchFiles);
 
 
 // Default
 gulp.task('default', gulp.series(
-  'css',
-  'productionCss'
+  'css'
 ));
 
 // Watch
 gulp.task('watch', gulp.series(
-  'css'
+  'watchFiles'
 ));
 
 

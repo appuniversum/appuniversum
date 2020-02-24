@@ -5,18 +5,18 @@
 /* Variables
    ========================================================================== */
 
-$vl-button-height         : $vl-unit-large !default;
-$vl-button-font-size      : $vl-h6 !default;
-$vl-button-border         : .2rem !default;
+$au-button-height         : $au-unit-large !default;
+$au-button-font-size      : $au-h6 !default;
+$au-button-border         : .2rem !default;
 
 /* Component
    ========================================================================== */
 
-.vl-c-button {
-  @include vl-font-size($vl-button-font-size);
-  font-family: $vl-font;
-  font-weight: $vl-regular;
-  height: $vl-button-height;
+.au-c-button {
+  @include vl-font-size($au-button-font-size);
+  font-family: $au-font;
+  font-weight: $au-regular;
+  height: $au-button-height;
   text-decoration: none;
   text-align: center;
   outline: 0;
@@ -24,117 +24,117 @@ $vl-button-border         : .2rem !default;
   -webkit-appearance: none; // doesn't work without prefix on Safari iOS11
   display: inline-flex;
   align-items: center;
-  padding: 0 $vl-unit .1ex; // Visually center the text in the button
+  padding: 0 $au-unit .1ex; // Visually center the text in the button
   border: 0;
   border-radius: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: $vl-action-fg-color;
-  background-color: $vl-action-color;
-  transition: background-color $vl-transition;
+  color: $au-action-fg-color;
+  background-color: $au-action-color;
+  transition: background-color $au-transition;
   cursor: default;
 
   &:hover,
   &:focus {
-    color: $vl-action-fg-color;
-    background-color: $vl-action-hover-color;
+    color: $au-action-fg-color;
+    background-color: $au-action-hover-color;
     text-decoration: none;
   }
 
   &:focus {
-    outline: $vl-outline;
+    outline: $au-outline;
   }
 
   &:active {
-    background-color: $vl-action-active-color;
+    background-color: $au-action-active-color;
   }
 
   &:visited {
-    background-color: $vl-action-visited-color;
+    background-color: $au-action-visited-color;
   }
 }
 
 
 // Secondary button
-.vl-c-button--secondary {
+.au-c-button--secondary {
   background-color: transparent;
-  color: $vl-action-color;
-  border: $vl-button-border solid tint($vl-action-color,20);
-  transition: color $vl-transition, border-color $vl-transition, box-shadow $vl-transition;
-  line-height: $vl-button-height - #{$vl-button-border} * 2;
+  color: $au-action-color;
+  border: $au-button-border solid tint($au-action-color,20);
+  transition: color $au-transition, border-color $au-transition, box-shadow $au-transition;
+  line-height: $au-button-height - #{$au-button-border} * 2;
 
   &:visited {
-    color: $vl-action-color;
+    color: $au-action-color;
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: $vl-action-hover-color;
+    color: $au-action-hover-color;
     background-color: transparent;
-    border-color: tint($vl-action-hover-color,20);
-    box-shadow: inset 0px 0px 0px $vl-button-border tint($vl-action-hover-color,20);
+    border-color: tint($au-action-hover-color,20);
+    box-shadow: inset 0px 0px 0px $au-button-border tint($au-action-hover-color,20);
   }
 }
 
 // Error button
-.vl-c-button--error {
-  background-color: $vl-action-error-color;
-  border-color:  $vl-action-error-color;
-  color: $vl-page-bg;
+.au-c-button--error {
+  background-color: $au-action-error-color;
+  border-color:  $au-action-error-color;
+  color: $au-page-bg;
 
   &:hover,
   &:focus,
   &:active {
-    color: $vl-page-bg;
-    background-color: $vl-action-error-hover-color;
-    border-color: $vl-action-error-color;
-    color: $vl-page-bg;
+    color: $au-page-bg;
+    background-color: $au-action-error-hover-color;
+    border-color: $au-action-error-color;
+    color: $au-page-bg;
     box-shadow: none;
   }
 
-  &.vl-c-button--secondary {
+  &.au-c-button--secondary {
     background-color: transparent;
 
     &,
     &:visited {
-      color: $vl-action-error-color;
-      border-color: tint($vl-action-error-color,20);
+      color: $au-action-error-color;
+      border-color: tint($au-action-error-color,20);
     }
 
     &:hover,
     &:focus,
     &:active {
-      color: $vl-action-error-hover-color;
-      border-color: tint($vl-action-error-hover-color,20);
-      box-shadow: inset 0px 0px 0px $vl-button-border tint($vl-action-error-hover-color,20);
+      color: $au-action-error-hover-color;
+      border-color: tint($au-action-error-hover-color,20);
+      box-shadow: inset 0px 0px 0px $au-button-border tint($au-action-error-hover-color,20);
     }
   }
 }
 
 
 // Disabled button
-.vl-c-button--disabled {
+.au-c-button--disabled {
   cursor: not-allowed;
 
   &,
   &:hover,
   &:focus,
   &:active {
-    background-color: $vl-action-disabled-fg-color;
-    border-color: $vl-action-disabled-fg-color;
-    color: $vl-page-bg;
+    background-color: $au-action-disabled-fg-color;
+    border-color: $au-action-disabled-fg-color;
+    color: $au-page-bg;
     box-shadow: none;
   }
 
-  &.vl-c-button--secondary {
+  &.au-c-button--secondary {
     background-color: transparent;
-    color: $vl-action-disabled-color;
-    border-color: tint($vl-action-disabled-color,20);
+    color: $au-action-disabled-color;
+    border-color: tint($au-action-disabled-color,20);
 
     &:visited {
-      color: $vl-action-disabled-color;
+      color: $au-action-disabled-color;
     }
   }
 }
