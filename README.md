@@ -32,7 +32,7 @@ There are several options to run or build the css.
 ##### Using the Gulp CLI
 To build the css run `gulp`.
 
-To run a [browser-sync](https://www.browsersync.io/) server and watch changes run `gulp watch`.
+To edit and watch changes run `gulp watch`.
 
 ## Need help
 Appuniversum uses **Gulp** to process the `.scss` files. More information about this tool can be found on the following site:
