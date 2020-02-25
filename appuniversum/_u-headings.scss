@@ -32,6 +32,6 @@ $au-headings: (
   ========================================================================== */
 @each $heading-namespace, $heading in $au-headings {
   .au-u-#{$heading-namespace} {
-    @include vl-font-size($heading, $important: true);
+    @include au-font-size($heading, $important: true);
   }
 }

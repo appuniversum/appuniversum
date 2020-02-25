@@ -5,6 +5,9 @@
 /* Variables
    ========================================================================== */
 
+$au-popover-color             : $au-primary !default;
+$au-popover-hover-color       : $au-primary-light !default;
+
 
 /* Component
    ========================================================================== */
@@ -15,7 +18,7 @@
 }
 
   .au-c-popover__button {
-    @include vl-font-size($au-base);
+    @include au-font-size($au-base);
     font-weight: $au-regular;
     text-align: left;
     border: 0;
@@ -24,12 +27,12 @@
 
     &,
     &:visited {
-      color: $au-action-color;
+      color: $au-popover-color;
     }
 
     &:hover,
     &:focus {
-      color: $au-action-hover-color;
+      color: $au-popover-hover-color;
       background-color: $au-neutral-lightest;
     }
 
@@ -99,7 +102,3 @@
       outline-offset: -$au-outline-border * 2;
     }
   }
-
-  // .au-c-popover__item[aria-checked="true"]::before {
-
-  // }

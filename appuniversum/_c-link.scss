@@ -5,6 +5,14 @@
 /* Variables
    ========================================================================== */
 
+$au-link-color             : $au-primary !default;
+$au-link-hover-color       : $au-primary-light !default;
+$au-link-active-color      : $au-primary-light !default;
+$au-link-visited-color     : $au-primary-dark !default;
+$au-link-active-color      : $au-primary-dark !default;
+$au-link-underline         : $au-primary-light !default;
+$au-link-underline-hover   : $au-primary-lighter !default;
+
 
 /* Component
    ========================================================================== */
@@ -12,29 +20,32 @@
 .au-c-link {
   transition: color $au-transition, text-decoration $au-transition;
   font-weight: $au-regular;
-  text-decoration-color: $au-action-underline;
+  text-decoration-color: $au-link-underline;
 
   &,
   &:visited {
-    color: $au-action-color;
+    color: $au-link-color;
   }
 
   &:hover,
   &:focus {
-    color: $au-action-hover-color;
-    text-decoration-color: $au-action-underline-hover;
+    color: $au-link-hover-color;
+    text-decoration-color: $au-link-underline-hover;
   }
 
   &:focus {
-    outline: $au-outline;
     outline-offset: $au-unit-tiny/2;
   }
 
   .is-active > & {
-    color: $au-action-active-color;
+    color: $au-link-active-color;
     text-decoration: none;
   }
 }
+
+
+/* Modifiers
+   ========================================================================== */
 
 .au-c-link--neutral {
   &,
@@ -50,12 +61,11 @@
   }
 
   &:focus {
-    outline: $au-outline;
     outline-offset: $au-unit-tiny/2;
   }
 
   .is-active > & {
-    color: $au-action-active-color;
+    color: $au-link-active-color;
     text-decoration: none;
   }
 }

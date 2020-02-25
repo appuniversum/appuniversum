@@ -4,6 +4,17 @@
    #PAGE
    ========================================================================== */
 
+/* Variables
+   ========================================================================== */
+
+$au-page-bg                  : $au-white !default;
+$au-select-text-color        : $au-neutral-darkest  !default;
+$au-select-text-bg           : $au-primary-lightest  !default;
+
+
+/* Elements
+   ========================================================================== */
+
 /**
  * Simple page-level setup.
  *
@@ -44,7 +55,13 @@ body {
   background-color: $au-select-text-bg;
 }
 
+:focus,
+button:focus {
+  outline: $au-outline;
+}
+
 // Only show outlines to keyboard users
-:focus:not(:focus-visible) { outline: none }
-
-
+:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none
+}

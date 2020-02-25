@@ -5,21 +5,32 @@
 /* Variables
    ========================================================================== */
 
-$au-button-height         : $au-unit-large !default;
-$au-button-font-size      : $au-h6 !default;
-$au-button-border         : .2rem !default;
+$au-button-height            : $au-unit-large !default;
+$au-button-font-size         : $au-h6 !default;
+$au-button-border            : .2rem !default;
+$au-button-color             : $au-primary !default;
+$au-button-fg-color          : $au-white !default;
+$au-button-hover-color       : $au-primary-light !default;
+$au-button-active-color      : $au-primary-light !default;
+$au-button-visited-color     : $au-primary-dark !default;
+$au-button-active-color      : $au-primary-dark !default;
+$au-button-underline         : $au-primary-light !default;
+$au-button-underline-hover   : $au-primary-lighter !default;
+$au-button-error-color       : $au-error-dark !default;
+$au-button-error-hover-color : $au-error !default;
+$au-button-disabled-color    : $au-neutral-darker !default;
+$au-button-disabled-fg-color : $au-neutral-dark !default;
 
 /* Component
    ========================================================================== */
 
 .au-c-button {
-  @include vl-font-size($au-button-font-size);
+  @include au-font-size($au-button-font-size);
   font-family: $au-font;
   font-weight: $au-regular;
   height: $au-button-height;
   text-decoration: none;
   text-align: center;
-  outline: 0;
   appearance: none;
   -webkit-appearance: none; // doesn't work without prefix on Safari iOS11
   display: inline-flex;
@@ -30,85 +41,88 @@ $au-button-border         : .2rem !default;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: $au-action-fg-color;
-  background-color: $au-action-color;
+  color: $au-button-fg-color;
+  background-color: $au-button-color;
   transition: background-color $au-transition;
   cursor: default;
 
   &:hover,
   &:focus {
-    color: $au-action-fg-color;
-    background-color: $au-action-hover-color;
+    color: $au-button-fg-color;
+    background-color: $au-button-hover-color;
     text-decoration: none;
   }
 
   &:focus {
-    outline: $au-outline;
+    outline-offset: $au-unit-tiny/2;
   }
 
   &:active {
-    background-color: $au-action-active-color;
+    background-color: $au-button-active-color;
   }
 
   &:visited {
-    background-color: $au-action-visited-color;
+    background-color: $au-button-visited-color;
   }
 }
 
 
-// Secondary button
-.au-c-button--secondary {
+/* Modifiers
+   ========================================================================== */
+
+// Ghost button
+.au-c-button--ghost {
   background-color: transparent;
-  color: $au-action-color;
-  border: $au-button-border solid tint($au-action-color,20);
+  color: $au-button-color;
+  border: $au-button-border solid tint($au-button-color,20);
   transition: color $au-transition, border-color $au-transition, box-shadow $au-transition;
   line-height: $au-button-height - #{$au-button-border} * 2;
 
   &:visited {
-    color: $au-action-color;
+    color: $au-button-color;
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: $au-action-hover-color;
+    color: $au-button-hover-color;
     background-color: transparent;
-    border-color: tint($au-action-hover-color,20);
-    box-shadow: inset 0px 0px 0px $au-button-border tint($au-action-hover-color,20);
+    border-color: tint($au-button-hover-color,20);
+    box-shadow: inset 0px 0px 0px $au-button-border tint($au-button-hover-color,20);
   }
 }
 
 // Error button
 .au-c-button--error {
-  background-color: $au-action-error-color;
-  border-color:  $au-action-error-color;
+  background-color: $au-button-error-color;
+  border-color:  $au-button-error-color;
   color: $au-page-bg;
 
   &:hover,
   &:focus,
   &:active {
     color: $au-page-bg;
-    background-color: $au-action-error-hover-color;
-    border-color: $au-action-error-color;
+    background-color: $au-button-error-hover-color;
+    border-color: $au-button-error-color;
     color: $au-page-bg;
     box-shadow: none;
   }
 
-  &.au-c-button--secondary {
+  &.au-c-button--ghost {
     background-color: transparent;
 
     &,
     &:visited {
-      color: $au-action-error-color;
-      border-color: tint($au-action-error-color,20);
+      color: $au-button-error-color;
+      border-color: tint($au-button-error-color,20);
     }
 
     &:hover,
     &:focus,
     &:active {
-      color: $au-action-error-hover-color;
-      border-color: tint($au-action-error-hover-color,20);
-      box-shadow: inset 0px 0px 0px $au-button-border tint($au-action-error-hover-color,20);
+      color: $au-button-error-hover-color;
+      border-color: tint($au-button-error-hover-color,20);
+      box-shadow: inset 0px 0px 0px $au-button-border tint($au-button-error-hover-color,20);
     }
   }
 }
@@ -122,19 +136,19 @@ $au-button-border         : .2rem !default;
   &:hover,
   &:focus,
   &:active {
-    background-color: $au-action-disabled-fg-color;
-    border-color: $au-action-disabled-fg-color;
+    background-color: $au-button-disabled-fg-color;
+    border-color: $au-button-disabled-fg-color;
     color: $au-page-bg;
     box-shadow: none;
   }
 
-  &.au-c-button--secondary {
+  &.au-c-button--ghost {
     background-color: transparent;
-    color: $au-action-disabled-color;
-    border-color: tint($au-action-disabled-color,20);
+    color: $au-button-disabled-color;
+    border-color: tint($au-button-disabled-color,20);
 
     &:visited {
-      color: $au-action-disabled-color;
+      color: $au-button-disabled-color;
     }
   }
 }

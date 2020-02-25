@@ -11,10 +11,10 @@
  * contains the basic structural elements, but classes should be complemented
  * with width utilities, for example:
  *
- *   <div class="vl-o-grid">
- *     <div class="vl-o-grid__item u-1-2">
+ *   <div class="au-o-grid">
+ *     <div class="au-o-grid__item u-1-2">
  *     </div>
- *     <div class="vl-o-grid__item u-1-2">
+ *     <div class="au-o-grid__item u-1-2">
  *     </div>
  *   </div>
  *
@@ -22,12 +22,12 @@
  * fluidly fill half of the width of the parent. We can have more complex
  * systems:
  *
- *   <div class="vl-o-grid">
- *     <div class="vl-o-grid__item u-1-1 u-1-3@medium">
+ *   <div class="au-o-grid">
+ *     <div class="au-o-grid__item u-1-1 u-1-3@medium">
  *     </div>
- *     <div class="vl-o-grid__item u-1-2 u-1-3@medium">
+ *     <div class="au-o-grid__item u-1-2 u-1-3@medium">
  *     </div>
- *     <div class="vl-o-grid__item u-1-2 u-1-3@medium">
+ *     <div class="au-o-grid__item u-1-2 u-1-3@medium">
  *     </div>
  *   </div>
  *
@@ -39,12 +39,12 @@
  * We can also manipulate entire layout systems by adding a series of modifiers
  * to the `.au-o-grid` block. For example:
  *
- *   <div class="vl-o-grid vl-o-grid--reverse">
+ *   <div class="au-o-grid au-o-grid--reverse">
  *
  * This will reverse the displayed order of the system so that it runs in the
  * opposite order to our source, effectively flipping the system over.
  *
- *   <div class="vl-o-grid vl-o-grid--[right|center]">
+ *   <div class="au-o-grid au-o-grid--[right|center]">
  *
  * This will cause the system to fill up from either the centre or the right
  * hand side. Default behaviour is to fill up the layout system from the left.

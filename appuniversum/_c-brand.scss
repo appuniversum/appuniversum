@@ -59,7 +59,7 @@ $au-brand-height               : $au-unit-large - $au-unit-tiny !default;
   }
 
   .au-c-brand__logotype {
-    @include vl-font-size(1.8rem,1);
+    @include au-font-size(1.8rem,1);
     position: relative;
     // top: -.1ex;
     font-family: "Flanders Art Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

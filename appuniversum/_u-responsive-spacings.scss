@@ -68,11 +68,11 @@ $au-spacing-directions: null !default;
 // in the class name. By default, we are generating the responsive suffixes
 // for the classes with a `@` symbol so you get classes like:
 //
-//   <div class="vl-u-margin-bottom@small">
+//   <div class="au-u-margin-bottom@small">
 //
 // Be aware that since the `@` symbol is a reserved symbol in CSS, it has to be
 // escaped with a `\`. In the markup though, you write your classes without the
-// backslash (e.g. `vl-u-margin-bottom@small`).
+// backslash (e.g. `au-u-margin-bottom@small`).
 $au-widths-breakpoint-separator: \@ !default;
 $au-responsive-spacing-directions: null !default;
 $au-responsive-spacing-properties: null !default;

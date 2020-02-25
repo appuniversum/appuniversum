@@ -7,6 +7,11 @@
 
 $au-header-bg                : $au-white !default;
 $au-header-border            : $au-neutral-lighter !default;
+$au-header-color             : $au-primary !default;
+$au-header-hover-color       : $au-primary-light !default;
+$au-header-active-color      : $au-primary-dark !default;
+$au-header-underline         : $au-primary-light !default;
+$au-header-underline-hover   : $au-primary-lighter !default;
 
 /* Component
    ========================================================================== */
@@ -27,7 +32,7 @@ $au-header-border            : $au-neutral-lighter !default;
   }
 
   .au-c-header__title {
-    @include vl-font-size($au-base,.7);
+    @include au-font-size($au-base,.7);
     font-weight: $au-medium;
     text-transform: uppercase;
     position: relative;
@@ -42,9 +47,9 @@ $au-header-border            : $au-neutral-lighter !default;
 
     &:hover,
     &:focus {
-      color: $au-action-hover-color;
+      color: $au-header-hover-color;
       text-decoration: underline;
-      text-decoration-color: $au-action-underline-hover;
+      text-decoration-color: $au-header-underline-hover;
     }
 
     &:focus {
@@ -53,7 +58,7 @@ $au-header-border            : $au-neutral-lighter !default;
   }
 
   .au-c-header__skiplink {
-    @include vl-font-size($au-base,.7);
+    @include au-font-size($au-base,.7);
     font-weight: $au-light;
     position: relative;
     transition: color $au-transition;
