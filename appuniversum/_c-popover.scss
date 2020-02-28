@@ -19,6 +19,7 @@ $au-popover-hover-color       : $au-primary-light !default;
 
   .au-c-popover__button {
     @include au-font-size($au-base);
+    font-family: inherit;
     font-weight: $au-regular;
     text-align: left;
     border: 0;

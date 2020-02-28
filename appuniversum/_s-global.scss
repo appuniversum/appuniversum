@@ -25,15 +25,15 @@ $au-global-font-size: 1.4rem;
 $au-global-line-height: 1.5;
 
 // Font families
-$au-font: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-$au-font-secondary: "Flanders Art Serif";
+$au-font: "flanders-sans", BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$au-font-secondary: "flanders-serif";
 $au-font-tertiary: courier, monospace;
 
 
 // Font styles
-$au-light: 400;
-$au-regular: 500;
-$au-medium: 600;
+$au-light: 300;
+$au-regular: 400;
+$au-medium: 500;
 $au-bold: 700;
 
 
@@ -95,8 +95,3 @@ $au-transition: $au-duration $au-easing;
 $au-z-index-alpha: 1;
 $au-z-index-beta: 2;
 $au-z-index-gamma: 3;
-
-
-
-
-
