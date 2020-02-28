@@ -19,9 +19,8 @@ This project is still under development and will change in the future.
 ## How to use
 
 ### Dependencies
-Appuniversum needs the following tools to be installed properly:
+Appuniversum needs the following tools to be installed:
 - [Node.js](https://nodejs.org/en/) (v13.9.0) or [NVM](https://github.com/creationix/nvm)
-- [Gulp](http://gulpjs.com/)
 
 #### Install
 To install run `npm install`
