@@ -20,23 +20,18 @@ This project is still under development and will change in the future.
 
 ### Dependencies
 Appuniversum needs the following tools to be installed properly:
-- [Node.js](https://nodejs.org/en/) (v10.9.0) or [NVM](https://github.com/creationix/nvm)
+- [Node.js](https://nodejs.org/en/) (v13.9.0) or [NVM](https://github.com/creationix/nvm)
 - [Gulp](http://gulpjs.com/)
 
 #### Install
 To install run `npm install`
 
 #### Run
-There are several options to run or build the css.
 
-##### Using the Gulp CLI
-To build the css run `gulp`.
+`npm start`: to edit and watch for code changes.
 
-To edit and watch changes run `gulp watch`.
+`npm run build: build the css.
 
-## Need help
-Appuniversum uses **Gulp** to process the `.scss` files. More information about this tool can be found on the following site:
-- [Gulp documentation](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 
 ## Get involved
 
