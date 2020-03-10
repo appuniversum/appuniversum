@@ -84,4 +84,16 @@
     page-break-after: avoid;
   }
 
+  // Show full screen on print
+  .au-u-wide-on-print {
+    min-width: 100% !important;
+    width: 100% !important;
+    max-width: none !important;
+    flex-basis: 100% !important;
+  }
+
+  // Hide on print
+  .au-u-hide-on-print {
+    display: none !important;
+  }
 }
