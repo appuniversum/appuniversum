@@ -5,7 +5,7 @@
   "main": "appuniversum.scss",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/appuniversum/appuniversum"
+    "url": "git+https://github.com/appuniversum/appuniversum.git"
   },
   "author": "",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "url": "https://github.com/appuniversum/appuniversum/issues"
   },
   "homepage": "https://github.com/appuniversum/appuniversum#readme",
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "cssnano": "^4.1.10",
