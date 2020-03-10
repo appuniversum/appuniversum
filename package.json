@@ -1,18 +1,18 @@
 {
-  "name": "App-universum",
-  "version": "0.1.0",
+  "name": "appuniversum",
+  "version": "0.0.0",
   "description": "A design universe for Flanders GOV applications.",
   "main": "appuniversum.scss",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/appuniversum/app-universum"
+    "url": "git+https://github.com/appuniversum/appuniversum"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/appuniversum/app-universum/issues"
+    "url": "https://github.com/appuniversum/appuniversum/issues"
   },
-  "homepage": "https://github.com/appuniversum/app-universum#readme",
+  "homepage": "https://github.com/appuniversum/appuniversum#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "cssnano": "^4.1.10",

@@ -29,7 +29,7 @@ To install run `npm install`
 
 `npm start`: to edit and watch for code changes.
 
-`npm run build: build the css.
+`npm run build`: build the css.
 
 
 ## Get involved

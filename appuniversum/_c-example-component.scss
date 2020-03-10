@@ -1,0 +1,38 @@
+/* ==================================
+   #EXAMPLE COMPONENT
+   ================================== */
+
+/**
+ * This is an example to explain the AppUniversum component structure.
+ * Component classes are prefixed with `.au-c-`.
+ */
+
+/* Variables
+   ========================================================================== */
+
+/**
+ * Provide variables that are scoped for each component.
+ * Add `!default` so the component can be adapted easily adapted.
+ */
+
+$au-component-variable: 1rem !default;
+
+
+/* Component
+   ========================================================================== */
+
+.au-c-component {
+  // Component styles
+}
+
+  .au-c-component__child {
+    // Component child styles
+  }
+
+
+/* Modifiers
+   ========================================================================== */
+
+.au-c-component--modifier {
+  // Component modifier styles
+}
