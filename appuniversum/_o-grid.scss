@@ -177,6 +177,14 @@
  * Reverse the rendered order of the grid system.
  */
 
- .au-o-grid--reverse {
+.au-o-grid--reverse {
   flex-direction: row-reverse;
+}
+
+
+/**
+ * Stretch the grid in the available space
+ */
+.au-o-grid--stretch {
+  height: 100%;
 }
