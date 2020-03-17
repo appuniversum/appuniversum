@@ -18,7 +18,7 @@ jobs:
         if: success()
         uses: crazy-max/ghaction-github-pages@v1
         with:
-          target_branch: master
+          target_branch: gh-pages
           build_dir: _site
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
