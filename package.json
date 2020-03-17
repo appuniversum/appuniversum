@@ -47,8 +47,5 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ],
-  "optionalDependencies": {
-    "fsevents": "^2.1.2"
-  }
+  ]
 }
