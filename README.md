@@ -23,7 +23,7 @@ To install run `npm install`
 
 `npm start`: run a [browser-sync](https://www.browsersync.io/) server and watch for code changes.
 
-`npm run build: build the site to the `_site`folder.
+`npm run build`: build the site to the `_site` folder.
 
 ## Need help
 Appuniversum uses **11ty** to generate the html and process the `.scss` files. More information about this tool can be found on the following site:
