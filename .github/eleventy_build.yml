@@ -1,0 +1,24 @@
+name: Eleventy Build
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Compile with Gulp
+        uses: elstudio/actions-js-build/build@v2
+      - name: Deploy
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: master
+          build_dir: _site
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section class="au-o-region-large au-d-theme-white">
+  <div class="au-o-layout au-d-editor">
+    <h1>{{ title }}</h1>
+    {% if references %}
+    <h2 class="au-u-font au-u-h6">References:</h2>
+    <ul class="au-u-margin-bottom-none">
+      {% if references.wu-reference %}
+      <li><a href="{{ references.wu-reference }}" target="_blank" rel="noopener">Webuniversum V3: {{ references.component }}</a></li>
+      {% endif %}
+      {% if references.lne-doc %}
+      <li><a href="{{ references.lne-doc }}" target="_blank" rel="noopener">LNE webcomponents doc: {{ references.component }}</a></li>
+      {% endif %}
+      {% if references.lne-demo %}
+      <li><a href="{{ references.lne-demo }}" target="_blank" rel="noopener">LNE webcomponents demo: {{ references.component }}</a></li>
+      {% endif %}
+      {% if references.lne-github %}
+      <li><a href="{{ references.lne-github }}" target="_blank" rel="noopener">LNE webcomponents github: {{ references.component }}</a></li>
+      {% endif %}
+    </ul>
+    {% endif %}
+    <hr>
+    {{ content }}
+  </div>
+</section>

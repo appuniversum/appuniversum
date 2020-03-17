@@ -1,0 +1,14 @@
+{
+  "path": "https://appuniversum.github.io/appuniversum",
+  "title": "Appuniversum",
+  "og-description": "A design universe for Flanders GOV applications.",
+  "og-locale": "en",
+  "tile-color": "#000000",
+  "theme-color": "#ffffff",
+  "url": "https://appuniversum.netlify.com",
+  "baseurl": "",
+  "copyright": {
+    "author": "ABB",
+    "year": "2020"
+  }
+}

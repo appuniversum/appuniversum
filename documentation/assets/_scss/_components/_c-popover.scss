@@ -1,0 +1,105 @@
+/* ==================================
+   #POPOVER
+   ================================== */
+
+/* Variables
+   ========================================================================== */
+
+$au-popover-color             : $au-primary !default;
+$au-popover-hover-color       : $au-primary-light !default;
+
+
+/* Component
+   ========================================================================== */
+
+.au-c-popover {
+  position: relative;
+  display: inline-block;
+}
+
+  .au-c-popover__button {
+    @include au-font-size(1.5rem);
+    font-family: inherit;
+    font-weight: $au-regular;
+    text-align: left;
+    border: 0;
+    padding: $au-unit-tiny/2 $au-unit-tiny;
+    border-radius: $au-radius;
+
+    &,
+    &:visited {
+      color: $au-popover-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $au-popover-hover-color;
+      background-color: $au-neutral-lightest;
+    }
+
+    &:focus {
+      outline: $au-outline;
+    }
+
+    .au-c-popover--outline & {
+      background-color: $au-white;
+      border: 1px solid $au-neutral-lighter;
+    }
+
+    .au-c-popover--outline &,
+    .au-c-popover--outline &:visited {
+      color: $au-neutral-darker;
+    }
+
+    .au-c-popover--outline &:hover,
+    .au-c-popover--outline &:focus {
+      color: $au-neutral-dark;
+      background-color: $au-neutral-lightest;
+    }
+  }
+
+  .au-c-popover__menu {
+    position: absolute;
+    right: 0;
+    background-color: $au-white;
+    min-width: 100%;
+    box-shadow: 0 0 $au-unit-tiny rgba($au-neutral-dark,.2), 0 0 $au-unit rgba($au-neutral-dark,.1);
+
+
+    .au-c-popover--outline & {
+      left: 0;
+      right: auto;
+    }
+  }
+
+  .au-c-popover__menu[role^="menuitem"] {
+    display: block;
+    min-width: 100%;
+    white-space: nowrap;
+  }
+
+  .au-c-popover__item {
+    display: block;
+    padding: $au-unit-tiny $au-unit-small;
+    white-space: nowrap;
+
+    &,
+    &:visited {
+      color: $au-neutral-darker;
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: $au-neutral-lightest;
+    }
+
+    &:hover,
+    &:focus {
+      color: $au-neutral-dark;
+    }
+
+    &:focus {
+      outline: $au-outline-border/2 dashed $au-neutral-light;
+      outline-offset: -$au-outline-border * 2;
+    }
+  }

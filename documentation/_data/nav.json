@@ -1,0 +1,42 @@
+{
+  "general": [
+    {
+      "title": "Introduction",
+      "url": "/"
+    },
+    {
+      "title": "Contributing",
+      "url": "/contributing/"
+    }
+  ],
+  "documentation": [
+    {
+      "title": "Coding principles",
+      "url": "/guidelines/coding-principles/"
+    },
+    {
+      "title": "Coding standards",
+      "url": "/guidelines/coding-standards/"
+    },
+    {
+      "title": "Architecture and namespaces",
+      "url": "/guidelines/architecture/"
+    }
+  ],
+  "foundation": [
+    {
+      "title": "Colors",
+      "url": "/foundation/colors/"
+    },
+    {
+      "title": "Typography",
+      "url": "/foundation/typography/"
+    }
+  ],
+  "cta": [
+    {
+      "title": "Github",
+      "url": "https://github.com/appuniversum/appuniversum.github.io"
+    }
+  ]
+}

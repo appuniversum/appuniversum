@@ -1,0 +1,45 @@
+<aside class="au-o-grid__item au-u-1-4@small au-u-1-6@medium">
+  <div class="au-c-sidebar">
+    <div class="au-c-sidebar__content">
+      <div class="au-o-box au-o-box--small">
+        <p class="au-d-nav__intro">
+          A design universe for Flanders GOV applications.
+        </p>
+      </div>
+      <!-- Define your site navigation in nav.json -->
+      <nav>
+        <ul class="au-c-list-navigation">
+          {% for item in nav.general %}
+          <li class="au-c-list-navigation__item">
+            <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+          <li class="au-c-list-navigation__item au-c-list-navigation__item--section">Guidelines:</li>
+          {% for item in nav.documentation %}
+          <li class="au-c-list-navigation__item">
+            <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+          <li class="au-c-list-navigation__item au-c-list-navigation__item--section">Foundation:</li>
+          {% for item in nav.foundation %}
+          <li class="au-c-list-navigation__item ">
+            <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+
+          <li class="au-c-list-navigation__item au-c-list-navigation__item--section">Components:</li>
+          <li class="au-c-list-navigation__item ">
+            <a href="https://appuniversum.github.io/ember-appuniversum/" class="au-c-list-navigation__link">Ember-components</a>
+          </li>
+
+          <!-- {%- assign components = collections.components -%}
+          {% for component in components %}
+          <li class="au-c-list-navigation__item">
+            <a href="{{ component.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ component.data.title }}</a>
+          </li>
+          {% endfor %} -->
+        </ul>
+      </nav>
+    </div>
+  </div>
+</aside>

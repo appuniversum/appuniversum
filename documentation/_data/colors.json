@@ -1,0 +1,135 @@
+[
+  {
+     "name": "$au-white",
+     "value": "#FFFFFF"
+  },
+  {
+    "name": "$au-black",
+    "value": "#202326"
+  },
+  {
+    "name": "$au-neutral",
+    "value": "#6D7783"
+  },
+  {
+    "name": "$au-neutral-light",
+    "value": "#CBD2DA"
+  },
+  {
+    "name": "$au-neutral-lighter",
+    "value": "#E8EBEE"
+  },
+  {
+    "name": "$au-neutral-lightest",
+    "value": "#F3F5F6"
+  },
+  {
+    "name": "$au-neutral-dark",
+    "value": "#545B63"
+  },
+  {
+    "name": "$au-neutral-darker",
+    "value": "#3b4146"
+  },
+  {
+    "name": "$au-neutral-darkest",
+    "value": "#202326"
+  },
+  {
+    "name": "$au-yellow",
+    "value": "#FEE539"
+  },
+  {
+    "name": "$au-blue",
+    "value": "#0F68C9"
+  },
+  {
+    "name": "$au-blue-light",
+    "value": "#1075E2"
+  },
+  {
+    "name": "$au-blue-lighter",
+    "value": "#AAD0F9"
+  },
+  {
+    "name": "$au-blue-lightest",
+    "value": "#DCECFD"
+  },
+  {
+    "name": "$au-blue-dark",
+    "value": "#0C56A6"
+  },
+  {
+    "name": "$au-red",
+    "value": "#DB3434"
+  },
+  {
+    "name": "$au-red-light",
+    "value": "#470000"
+  },
+  {
+    "name": "$au-red-lighter",
+    "value": "#FBE6E6"
+  },
+  {
+    "name": "$au-red-lightest",
+    "value": "#FCF3F3"
+  },
+  {
+    "name": "$au-red-dark",
+    "value": "#C32323"
+  },
+  {
+    "name": "$au-red-darker",
+    "value": "#470000"
+  },
+  {
+    "name": "$au-green",
+    "value": "#8BAE00"
+  },
+  {
+    "name": "$au-green-light",
+    "value": "#B3E000"
+  },
+  {
+    "name": "$au-green-lighter",
+    "value": "#E8EFC2"
+  },
+  {
+    "name": "$au-green-lightest",
+    "value": "#F7FAE5"
+  },
+  {
+    "name": "$au-green-dark",
+    "value": "#637A0B"
+  },
+  {
+    "name": "$au-green-darker",
+    "value": "#323D08"
+  },
+  {
+    "name": "$au-orange",
+    "value": "#FFC515"
+  },
+  {
+    "name": "$au-orange-light",
+    "value": "#FEE539"
+  },
+  {
+    "name": "$au-orange-lighter",
+    "value": "#FFF29B"
+  },
+  {
+    "name": "$au-orange-lightest",
+    "value": "#FFF9D5"
+  },
+  {
+    "name": "$au-orange-dark",
+    "value": "#7C6B3A"
+  },
+  {
+    "name": "$au-orange-darker",
+    "value": "#5C4F2B"
+  }
+
+]
