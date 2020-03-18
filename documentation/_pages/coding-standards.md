@@ -52,7 +52,7 @@ Use rem units across the board, for declaration, except for media query statemen
 
 ````scss
 .au-c-component {
-  margin: .5rem; 
+  margin: .5rem;
 }
 ````
 
@@ -66,7 +66,7 @@ Respect the ITCSS logic of having more specificity the later a rule occurs in th
 }
 
 .au-u-margin-bottom-none {
-  margin-bottom: 0 !important; 
+  margin-bottom: 0 !important;
 }
 ````
 
@@ -78,7 +78,7 @@ Respect the ITCSS logic of having more specificity the later a rule occurs in th
 You should use a consistent component structure.
 1. Every component should start with its component name
 2. Use correct block level comments
-3. Don't specify multiple components in a single CSS file. 
+3. Don't specify multiple components in a single CSS file.
 4. A component should be namespaced. Please adhere to our [namespace rules](/documentation/architecture/).
 
 ````scss
@@ -98,9 +98,9 @@ $au-component-spacing     : 1.5rem !default;
   margin: $au-component-name-spacing;
 }
 
-  .au-c-component__child-element {
-    // Insert styles for the child element
-  }
+.au-c-component__child-element {
+  // Insert styles for the child element
+}
 
 
 /* Modifiers
@@ -142,7 +142,7 @@ Use _shame.scss for whatever you are ashamed of and document why they are there 
    #SHAME
    ================================== */
 
-// Quickfix to align outline popover better in this project. 
+// Quickfix to align outline popover better in this project.
 // @TODO: implement change in popover component.
 .au-c-popover--outline {
   margin-bottom: -.5ex;
@@ -161,9 +161,9 @@ Use ```--``` for any div that is a modifier of a BEM component.
   // Component styles
 }
 
-  .au-c-component__child {
-    // Child component styles
-  }
+.au-c-component__child {
+  // Child component styles
+}
 
 .au-c-component--modifier {
   // Modiier component styles
@@ -171,7 +171,7 @@ Use ```--``` for any div that is a modifier of a BEM component.
 ````
 
 ### Don’t nest BEM child selectors
-Don’t nest BEM child selectors for CSS specificity reasons. Also, because of the way CSS parsing works, this has performance benefits. 
+Don’t nest BEM child selectors for CSS specificity reasons. Also, because of the way CSS parsing works, this has performance benefits.
 **Exception:** when a child is dependend on a modifier or when CSS selectors are used this is allowed because this keeps the context of the styles grouped.
 
 
@@ -180,19 +180,19 @@ Don’t nest BEM child selectors for CSS specificity reasons. Also, because of t
   // Component styles
 }
 
-  .au-c-component__child {
-    // Child component styles
+.au-c-component__child {
+  // Child component styles
 
-    // Specific CSS selector styles
-    & + & {
-     
-    }
+  // Specific CSS selector styles
+  & + & {
 
-    // Modifier context styles
-    .au-c-component--large & {
-      
-    }
   }
+
+  // Modifier context styles
+  .au-c-component--large & {
+
+  }
+}
 ````
 
 ### No BEM grandchildren!
@@ -203,13 +203,13 @@ Do not attempt to to recreate HTML structures in CSS; the HTML structure can be 
   // Component styles
 }
 
-  .au-c-component__child {
-    // Child component styles
-  }
+.au-c-component__child {
+  // Child component styles
+}
 
-  .au-c-component__grandchild {
-    // Grandchild component styles
-  }
+.au-c-component__grandchild {
+  // Grandchild component styles
+}
 ````
 
 ***

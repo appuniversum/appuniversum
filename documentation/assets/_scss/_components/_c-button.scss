@@ -128,7 +128,6 @@ $au-button-disabled-fg-color : $au-neutral-dark !default;
   }
 }
 
-
 // Disabled button
 .au-c-button--disabled {
   cursor: not-allowed;
@@ -154,6 +153,7 @@ $au-button-disabled-fg-color : $au-neutral-dark !default;
   }
 }
 
+// Full width button
 .au-c-button--block {
   display: block;
   width: 100%;

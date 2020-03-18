@@ -17,13 +17,13 @@ $au-list-horizontal-divider    : 1px dotted $au-neutral-light !default;
   align-items: center;
 }
 
-  .au-c-list-horizontal__item {
-    display: flex;
-    align-items: center;
+.au-c-list-horizontal__item {
+  display: flex;
+  align-items: center;
 
-    & + & {
-      margin-left: $au-list-horizontal-spacing;
-      padding-left: $au-list-horizontal-spacing;
-      border-left: $au-list-horizontal-divider;
-    }
+  & + & {
+    margin-left: $au-list-horizontal-spacing;
+    padding-left: $au-list-horizontal-spacing;
+    border-left: $au-list-horizontal-divider;
   }
+}

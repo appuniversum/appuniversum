@@ -16,8 +16,8 @@ $au-container-height: calc(100vh - #{$au-unit-large - $au-unit-tiny}) !default;
   position: relative;
 }
 
-  .au-c-container__content {
-    position: relative;
-    height: $au-container-height;
-    overflow: auto;
-  }
+.au-c-container__content {
+  position: relative;
+  height: $au-container-height;
+  overflow: auto;
+}

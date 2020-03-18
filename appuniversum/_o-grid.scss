@@ -73,15 +73,15 @@
 }
 
 
-  /**
-   * 1. By default, all grid items are full-width (mobile first).
-   * 2. Gutters provided by padding:
-   */
+/**
+  * 1. By default, all grid items are full-width (mobile first).
+  * 2. Gutters provided by padding:
+  */
 
-  .au-o-grid__item {
-    width: 100%; /* [1] */
-    padding: $au-unit;
-  }
+.au-o-grid__item {
+  width: 100%; /* [1] */
+  padding: $au-unit;
+}
 
 
 /* Gutter size modifiers.
