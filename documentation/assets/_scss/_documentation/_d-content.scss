@@ -5,17 +5,17 @@
 /* Variables
    ========================================================================== */
 
-$au-editor-link-color             : $au-primary !default;
-$au-editor-link-hover-color       : $au-primary-light !default;
-$au-editor-link-active-color      : $au-primary-dark !default;
-$au-editor-link-underline         : $au-primary-light !default;
-$au-editor-link-underline-hover   : $au-primary-lighter !default;
+$au-content-link-color             : $au-primary !default;
+$au-content-link-hover-color       : $au-primary-light !default;
+$au-content-link-active-color      : $au-primary-dark !default;
+$au-content-link-underline         : $au-primary-light !default;
+$au-content-link-underline-hover   : $au-primary-lighter !default;
 
 
 /* Component
    ========================================================================== */
 
-.au-d-editor {
+.au-d-content {
   > * {
     margin-bottom: 0;
   }
@@ -234,17 +234,17 @@ $au-editor-link-underline-hover   : $au-primary-lighter !default;
   > p a:not(.au-c-button) {
     transition: color $au-transition, text-decoration $au-transition;
     font-weight: $au-regular;
-    text-decoration-color: $au-editor-link-underline;
+    text-decoration-color: $au-content-link-underline;
 
     &,
     &:visited {
-      color: $au-editor-link-color;
+      color: $au-content-link-color;
     }
 
     &:hover,
     &:focus {
-      color: $au-editor-link-hover-color;
-      text-decoration-color: $au-editor-link-underline-hover;
+      color: $au-content-link-hover-color;
+      text-decoration-color: $au-content-link-underline-hover;
     }
 
     &:focus {
@@ -253,7 +253,7 @@ $au-editor-link-underline-hover   : $au-primary-lighter !default;
     }
 
     .is-active > & {
-      color: $au-editor-link-active-color;
+      color: $au-content-link-active-color;
       text-decoration: none;
     }
   }
