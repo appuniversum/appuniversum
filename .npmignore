@@ -1,0 +1,7 @@
+documentation/
+.github/
+gulpfile.js
+.eleventy.js
+.eleventyignore
+.editorconfig
+.nvmrc
