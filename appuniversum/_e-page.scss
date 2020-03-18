@@ -57,9 +57,3 @@ body {
 button:focus {
   outline: $au-outline;
 }
-
-// Only show outlines to keyboard users
-:focus:not(:focus-visible),
-button:focus:not(:focus-visible) {
-  outline: none
-}
