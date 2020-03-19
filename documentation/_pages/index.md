@@ -4,7 +4,7 @@ layout: documentation
 permalink: "/"
 ---
 
-A CSS framework for Flanders GOV applications.
+A CSS framework for Flanders government applications.
 
 ## The goal of this project is to:
 - establish a shared set of coding guidelines and best practices
