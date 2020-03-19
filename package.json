@@ -1,11 +1,16 @@
 {
   "name": "@appuniversum/appuniversum",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A design universe for Flanders GOV applications.",
   "main": "appuniversum.scss",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/appuniversum/appuniversum.git"
+  },
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp",
+    "prepare": "gulp"
   },
   "author": "",
   "license": "MIT",
@@ -37,10 +42,6 @@
     "markdown-it-attrs": "^3.0.2",
     "pump": "^3.0.0",
     "require-dir": "^1.2.0"
-  },
-  "scripts": {
-    "start": "gulp watch",
-    "build": "gulp"
   },
   "browserslist": [
     "last 2 version",
