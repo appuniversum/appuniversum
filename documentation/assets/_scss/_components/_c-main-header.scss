@@ -5,13 +5,13 @@
 /* Variables
    ========================================================================== */
 
-$au-header-bg                : $au-white !default;
-$au-header-border            : $au-neutral-lighter !default;
-$au-header-color             : $au-primary !default;
-$au-header-hover-color       : $au-primary-light !default;
-$au-header-active-color      : $au-primary-dark !default;
-$au-header-underline         : $au-primary-light !default;
-$au-header-underline-hover   : $au-primary-lighter !default;
+$au-main-header-bg                : $au-white !default;
+$au-main-header-border            : $au-neutral-lighter !default;
+$au-main-header-color             : $au-primary !default;
+$au-main-header-hover-color       : $au-primary-light !default;
+$au-main-header-active-color      : $au-primary-dark !default;
+$au-main-header-underline         : $au-primary-light !default;
+$au-main-header-underline-hover   : $au-primary-lighter !default;
 
 /* Component
    ========================================================================== */
@@ -22,7 +22,7 @@ $au-header-underline-hover   : $au-primary-lighter !default;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $au-header-bg;
+  background-color: $au-main-header-bg;
   box-shadow: 0 1px 3px rgba($au-neutral-darkest, .1), 0 4px 20px rgba($au-neutral-darkest, .035), 0 1px 1px rgba($au-neutral-darkest, .025);
 }
 
@@ -65,9 +65,9 @@ $au-header-underline-hover   : $au-primary-lighter !default;
 
   &:hover,
   &:focus {
-    color: $au-header-hover-color;
+    color: $au-main-header-hover-color;
     text-decoration: underline;
-    text-decoration-color: $au-header-underline-hover;
+    text-decoration-color: $au-main-header-underline-hover;
   }
 
   &:focus {

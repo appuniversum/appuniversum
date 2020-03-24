@@ -1,5 +1,5 @@
 /* ==================================
-   #EDITOR
+   #CONTENT
    ================================== */
 
 /* Variables
@@ -15,7 +15,7 @@ $au-content-link-underline-hover   : $au-primary-lighter !default;
 /* Component
    ========================================================================== */
 
-.au-d-content {
+.au-c-content {
   > * {
     margin-bottom: 0;
   }
@@ -256,6 +256,28 @@ $au-content-link-underline-hover   : $au-primary-lighter !default;
       color: $au-content-link-active-color;
       text-decoration: none;
     }
+  }
+
+  table {
+    @include au-font-size($au-base);
+    width: 100%;
+    border: .1rem solid $au-neutral-light;
+  }
+
+  th,
+  td {
+    padding: $au-unit-small;
+    border-bottom: .1rem solid $au-neutral-light;
+    text-align: left;
+  }
+
+  th + th,
+  td + td {
+    border-left: .1rem solid $au-neutral-light;
+  }
+
+  th {
+    font-weight: $au-medium;
   }
 
   @include mq(small) {
