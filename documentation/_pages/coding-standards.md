@@ -142,9 +142,9 @@ Use _shame.scss for whatever you are ashamed of and document why they are there 
    #SHAME
    ================================== */
 
-// Quickfix to align outline popover better in this project.
-// @TODO: implement change in popover component.
-.au-c-popover--outline {
+// Quickfix to align outline dropdown better in this project.
+// @TODO: implement change in dropdown component.
+.au-c-dropdown--outline {
   margin-bottom: -.5ex;
 }
 ````

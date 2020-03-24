@@ -44,7 +44,7 @@
     this.menu.hidden = true
 
     // Get the menu item buttons
-    this.menuItems = this.menu.querySelectorAll('.js-popover-item')
+    this.menuItems = this.menu.querySelectorAll('.js-dropdown-item')
 
     if (this.menuItems.length < 1) {
       throw new Error('The #' + this.menuId + ' menu has no menu items')
@@ -265,6 +265,6 @@
     global.MenuButton = MenuButton
   }
 
-  const headerButton = document.querySelector('.js-popover-head > .js-popover-head__button')
+  const headerButton = document.querySelector('.js-dropdown-head > .js-dropdown-head__button')
   const headerMenuButton = new MenuButton(headerButton, { checkable: 'one' })
 }(this))
