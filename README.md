@@ -6,9 +6,6 @@ The goal of this project is to maintain a CSS framework that is easy to use, ext
 
 You are free to copy, modify, and distribute Appuniversum, even for commercial purposes, without asking for permission. For any third-party code please refer to the corresponding license included in this project.
 
-## Branches
-The documentation is generated from the `build` branch which is then deployed on the master branch. Don't edit the master branch directly.
-
 ## How to use
 
 ### Dependencies
