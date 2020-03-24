@@ -89,6 +89,18 @@ function css() {
     .pipe(browsersync.stream());
 }
 
+function publishedCss() {
+  return gulp.src("./appuniversum.scss")
+    .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest("./"))
+    .pipe(postcss([cssnano()]))
+    .pipe(rename((path) => {
+      path.basename += ".min";
+    }))
+    .pipe(gulp.dest("./"))
+}
+
 function productionCss() {
   return gulp.src(project.buildSrc + project.cssSrc)
     .pipe(sass({ outputStyle: "compressed" }))
@@ -167,6 +179,7 @@ function watchFiles() {
 // ---
 gulp.task('cleanBuild', cleanBuild);
 gulp.task('css', css);
+gulp.task('publishedCss', publishedCss);
 gulp.task('productionCss', productionCss);
 gulp.task('scripts', scripts);
 gulp.task('productionScripts', productionScripts);
@@ -186,6 +199,7 @@ gulp.task('assets', gulp.parallel(
 gulp.task('default', gulp.series(
   'cleanBuild',
   'css',
+  'publishedCss',
   'productionCss',
   'productionScripts',
   'generateBuild',
