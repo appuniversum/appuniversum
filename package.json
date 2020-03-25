@@ -44,9 +44,12 @@
     "require-dir": "^1.2.0"
   },
   "browserslist": [
-    "last 2 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
+    "last 1 Chrome version",
+    "last 1 Android version",
+    "last 1 Firefox version",
+    "last 1 FirefoxAndroid version",
+    "last 1 Safari version",
+    "last 1 iOS version",
+    "last 1 Edge version"
   ]
 }
