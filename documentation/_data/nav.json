@@ -21,6 +21,10 @@
     {
       "title": "Architecture and namespaces",
       "url": "/guidelines/architecture/"
+    },
+    {
+      "title": "Browser support",
+      "url": "/guidelines/browser-support/"
     }
   ],
   "foundation": [

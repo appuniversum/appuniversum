@@ -1,5 +1,6 @@
 documentation/
 .github/
+_site/
 gulpfile.js
 .eleventy.js
 .eleventyignore
