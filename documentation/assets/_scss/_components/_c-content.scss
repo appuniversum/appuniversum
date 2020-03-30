@@ -117,59 +117,39 @@ $au-content-link-underline-hover   : $au-primary-lighter !default;
     font-weight: $au-medium;
   }
 
-  > ul,
-  > ol {
-    list-style: none;
-    margin-left: $au-unit-small;
+  ul {
+    margin-left: $au-unit; // 2.4rem
   }
 
-  > ol {
-    margin-left: $au-unit + $au-unit-tiny/2;
+  ol {
+    margin-left: $au-unit - 0.4rem; // 2.4rem
   }
 
-  > ul ul {
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+      list-style: decimal;
+  }
+
+  ul ul {
     margin-left: $au-unit;
   }
 
-  > ol ol {
-    margin-left: $au-unit + $au-unit-small;
+  ol ol {
+    margin-top: $au-unit-small/2;
+    margin-bottom: $au-unit-small/2;
+    margin-left: $au-unit - $au-unit-small;
   }
 
-  > ul li,
-  > ol li {
+  ul li,
+  ol li {
     position: relative;
   }
 
-  > ul li:before {
-    content: '•';
-    position: absolute;
-    top: .3ex;
-    left: -$au-unit-small;
-    font-size: .8em;
-    color: $au-neutral;
-  }
-
-  > ul li + li,
-  > ol li + li {
+  ol li + li {
     margin-top: $au-unit-tiny;
-  }
-
-  > ol {
-    counter-reset: numbered-list;
-  }
-
-  > ol li:before {
-    content: counter(numbered-list);
-    counter-increment: numbered-list;
-    position: absolute;
-    top: .3ex;
-    left: -$au-unit - $au-unit-tiny/2;
-    font-size: .8em;
-    color: $au-neutral;
-    background-color: $au-neutral-lightest;
-    display: block;
-    padding: 0 $au-unit-tiny;
-    border-radius: $au-radius;
   }
 
   code {
@@ -322,21 +302,6 @@ $au-content-link-underline-hover   : $au-primary-lighter !default;
       @include au-font-size($au-h5,1.5);
     }
 
-    > ul {
-      margin-left: $au-unit - $au-unit-tiny;
-    }
-
-    > ol {
-      margin-left: $au-unit + $au-unit-tiny
-    }
-
-    > ul li:before {
-      left: -$au-unit + $au-unit-tiny;
-    }
-
-    > ol li:before {
-      left: -$au-unit - $au-unit-tiny;
-    }
   }
 
   @include mq(medium) {
