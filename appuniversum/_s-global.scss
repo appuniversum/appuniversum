@@ -49,13 +49,11 @@ $au-h1: 4.8rem;
 
 // Spacing units
 // ---
-$au-unit-base: .6rem;
-$au-unit-ratio: 2;
-$au-unit-tiny: $au-unit-base;
-$au-unit-small: $au-unit-tiny * $au-unit-ratio;
-$au-unit: $au-unit-small * $au-unit-ratio;
-$au-unit-large: $au-unit * $au-unit-ratio;
-$au-unit-huge: $au-unit-large * $au-unit-ratio;
+$au-unit-tiny: 0.6rem;
+$au-unit-small: 1.2rem;
+$au-unit: 2.4rem;
+$au-unit-large: 4.8rem;
+$au-unit-huge: 9.6rem;
 
 
 // Objects settings
