@@ -4,6 +4,8 @@ layout: documentation
 permalink: "/guidelines/coding-principles/"
 ---
 
+<div class="au-c-content">
+
 Appuniversum is built upon the following principles. Please keep these in mind when contributing and/or using this framework.
 
 ## Low specificity
@@ -21,3 +23,5 @@ Avoid reliance on other bits.
 
 - **The Principle of Least Surprise:** make sure expectations are met, and nothing else
 - **Murphy’s Law:** Pick the option that is the most resilient, 
+
+</div>

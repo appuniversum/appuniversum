@@ -4,8 +4,9 @@ layout: documentation
 permalink: "/foundation/colors/"
 ---
 
-​
-All color combinations should adhere to the [WCAG 2.0 AA standard](https://www.w3.org/TR/WCAG20/).
+​<div class="au-c-content">
+    All color combinations should adhere to the [WCAG 2.0 AA standard](https://www.w3.org/TR/WCAG20/).
+</div>
 
 <div class="au-o-box au-d-component">
   <ul class="au-o-grid au-o-grid--small u-margin-bottom">
