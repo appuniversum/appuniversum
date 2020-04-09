@@ -9,17 +9,17 @@ permalink: "/utilities/typography/"
 ## Font sizes
 
 <div class="au-o-box au-d-component">
-  <h1 class="au-u-h1 au-u-bold">$au-h1</h1>
+  <h1 class="au-u-h1 au-u-bold">$au-u-h1</h1>
   <hr>
-  <h2 class="au-u-h2 au-u-bold">$au-h2</h2>
+  <h2 class="au-u-h2 au-u-bold">$au-u-h2</h2>
   <hr>
-  <h3 class="au-u-h3 au-u-bold">$au-h3</h3>
+  <h3 class="au-u-h3 au-u-bold">$au-u-h3</h3>
   <hr>
-  <h4 class="au-u-h4 au-u-bold">$au-h4</h4>
+  <h4 class="au-u-h4 au-u-bold">$au-u-h4</h4>
   <hr>
-  <h5 class="au-u-h5 au-u-bold">$au-h5</h5>
+  <h5 class="au-u-h5 au-u-bold">$au-u-h5</h5>
   <hr>
-  <h6 class="au-u-h6 au-u-bold">$au-h6</h6>
+  <h6 class="au-u-h6 au-u-bold">$au-u-h6</h6>
   <hr>
   <p>$au-base</p>
 </div>
