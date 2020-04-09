@@ -4,6 +4,8 @@ layout: documentation
 permalink: "/contributing/"
 ---
 
+<div class="au-c-content">
+
 ​First off, thank you for considering contributing to Appuniversum.
 
 Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue, assessing changes, and helping you finalize your pull requests.
@@ -33,3 +35,5 @@ When filing an issue, make sure to answer these five questions:
 3. What did you do?
 4. What did you expect to see?
 5. What did you see instead?
+
+</div>

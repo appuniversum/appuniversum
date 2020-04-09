@@ -4,6 +4,8 @@ layout: documentation
 permalink: "/"
 ---
 
+<div class="au-c-content">
+
 A CSS framework for Flanders government applications.
 
 ## The goal of this project is to:
@@ -15,3 +17,5 @@ A CSS framework for Flanders government applications.
 ## References:
 - [Webuniversum V3](https://overheid.vlaanderen.be/webuniversum/v3/)
 - [LNE webcomponents](https://webcomponenten.omgeving.vlaanderen.be/doc/index.html)
+
+</div>

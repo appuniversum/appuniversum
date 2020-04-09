@@ -4,6 +4,8 @@ layout: documentation
 permalink: "/guidelines/coding-standards/"
 ---
 
+<div class="au-c-content">
+
 The following coding standards are based on YGDIR from [Mono](https://github.com/mono-company/ygdir)
 
 ## Style
@@ -238,3 +240,5 @@ This problem occurs in the HTML, not in the CSS. It is best to not mix up compon
   </div>
 </div>
 ````
+
+</div>

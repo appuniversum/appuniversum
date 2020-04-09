@@ -1,135 +1,242 @@
 [
   {
-     "name": "$au-white",
-     "value": "#FFFFFF"
+    "group": "Base",
+    "colors": [
+      {
+        "name": "$au-white",
+        "value": "#FFFFFF",
+        "contrast": "#545961",
+        "contrast-value": "$au-gray-700 or higher"
+      }
+    ]
   },
   {
-    "name": "$au-black",
-    "value": "#202326"
+    "group": "Gray",
+    "colors": [
+      {
+        "name": "$au-gray-100",
+        "value": "#F4F5F6",
+        "contrast": "#545961",
+        "contrast-value": "$au-gray-700 or higher"
+      },
+      {
+        "name": "$au-gray-200",
+        "value": "#E6E8EB",
+        "contrast": "#545961",
+        "contrast-value": "$au-gray-700 or higher"
+      },
+      {
+        "name": "$au-gray-300",
+        "value": "#CCD1D9",
+        "contrast": "#545961",
+        "contrast-value": "$au-gray-700 or higher"
+      },
+      {
+        "name": "$au-gray-400",
+        "value": "#A1ABBA",
+        "contrast": "#212326",
+        "contrast-value": "$au-gray-900 or higher"
+      },
+      {
+        "name": "$au-gray-500",
+        "value": "#8E98A6",
+        "contrast": "#212326",
+        "contrast-value": "$au-gray-900 or higher"
+      },
+      {
+        "name": "$au-gray-600",
+        "value": "#69717C",
+        "contrast": "#F4F5F6",
+        "contrast-value": "$au-gray-100 or lower"
+      },
+      {
+        "name": "$au-gray-700",
+        "value": "#545961",
+        "contrast": "#F4F5F6",
+        "contrast-value": "$au-gray-100 or lower"
+      },
+      {
+        "name": "$au-gray-800",
+        "value": "#2A2D31",
+        "contrast": "#F4F5F6",
+        "contrast-value": "$au-gray-100 or lower"
+      },
+      {
+        "name": "$au-gray-900",
+        "value": "#212326",
+        "contrast": "#F4F5F6",
+        "contrast-value": "$au-gray-100 or lower"
+      },
+      {
+        "name": "$au-gray-1000",
+        "value": "#000000",
+        "contrast": "#F4F5F6",
+        "contrast-value": "$au-gray-100 or lower"
+      }
+    ]
   },
   {
-    "name": "$au-neutral",
-    "value": "#6D7783"
+    "group": "Blue",
+    "colors": [
+      {
+        "name": "$au-blue-100",
+        "value": "#EDF6FF",
+        "contrast": "#0E5EB8",
+        "contrast-value": "$au-blue-700 or higher"
+      },
+      {
+        "name": "$au-blue-200",
+        "value": "#DCECFD",
+        "contrast": "#0E5EB8",
+        "contrast-value": "$au-blue-700 or higher"
+      },
+      {
+        "name": "$au-blue-300",
+        "value": "#C1DDFB",
+        "contrast": "#0E5EB8",
+        "contrast-value": "$au-blue-700 or higher"
+      },
+      {
+        "name": "$au-blue-600",
+        "value": "#0F6FD7",
+        "contrast": "#EDF6FF",
+        "contrast-value": "$au-blue-100 or lower"
+      },
+      {
+        "name": "$au-blue-700",
+        "value": "#0E5EB8",
+        "contrast": "#EDF6FF",
+        "contrast-value": "$au-blue-100 or lower"
+      },
+      {
+        "name": "$au-blue-900",
+        "value": "#073261",
+        "contrast": "#EDF6FF",
+        "contrast-value": "$au-blue-100 or lower"
+      }
+    ]
   },
   {
-    "name": "$au-neutral-light",
-    "value": "#CBD2DA"
+    "group": "Yellow",
+    "colors": [
+      {
+        "name": "$au-yellow-100",
+        "value": "#FFF9D5",
+        "contrast": "#473D21",
+        "contrast-value": "$au-yellow-700 or higher"
+      },
+      {
+        "name": "$au-yellow-200",
+        "value": "#FFF29B",
+        "contrast": "#473D21",
+        "contrast-value": "$au-yellow-700 or higher"
+      },
+      {
+        "name": "$au-yellow-300",
+        "value": "#FEE539",
+        "contrast": "#473D21",
+        "contrast-value": "$au-yellow-700 or higher"
+      },
+      {
+        "name": "$au-yellow-400",
+        "value": "#FFC515",
+        "contrast": "#473D21",
+        "contrast-value": "$au-yellow-900 or higher"
+      },
+      {
+        "name": "$au-yellow-600",
+        "value": "#7F6E3B",
+        "contrast": "#FFF9D5",
+        "contrast-value": "$au-yellow-100 or lower"
+      },
+      {
+        "name": "$au-yellow-900",
+        "value": "#473D21",
+        "contrast": "#FFF9D5",
+        "contrast-value": "$au-yellow-100 or lower"
+      }
+    ]
   },
   {
-    "name": "$au-neutral-lighter",
-    "value": "#E8EBEE"
+    "group": "Red",
+    "colors": [
+      {
+        "name": "$au-red-100",
+        "value": "#FCF3F3",
+        "contrast": "#AB1F1F",
+        "contrast-value": "$au-red-700 or higher"
+      },
+      {
+        "name": "$au-red-200",
+        "value": "#F7E3E3",
+        "contrast": "#AB1F1F",
+        "contrast-value": "$au-red-700 or higher"
+      },
+      {
+        "name": "$au-red-500",
+        "value": "#FF4141",
+        "contrast": "#470000",
+        "contrast-value": "$au-red-900 or higher"
+      },
+      {
+        "name": "$au-red-600",
+        "value": "#D92626",
+        "contrast": "#FCF3F3",
+        "contrast-value": "$au-red-100 or lower"
+      },
+      {
+        "name": "$au-red-700",
+        "value": "#AB1F1F",
+        "contrast": "#FCF3F3",
+        "contrast-value": "$au-red-100 or lower"
+      },
+      {
+        "name": "$au-red-900",
+        "value": "#470000",
+        "contrast": "#FCF3F3",
+        "contrast-value": "$au-red-100 or lower"
+      }
+    ]
   },
   {
-    "name": "$au-neutral-lightest",
-    "value": "#F3F5F6"
-  },
-  {
-    "name": "$au-neutral-dark",
-    "value": "#545B63"
-  },
-  {
-    "name": "$au-neutral-darker",
-    "value": "#3b4146"
-  },
-  {
-    "name": "$au-neutral-darkest",
-    "value": "#202326"
-  },
-  {
-    "name": "$au-yellow",
-    "value": "#FEE539"
-  },
-  {
-    "name": "$au-blue",
-    "value": "#0F68C9"
-  },
-  {
-    "name": "$au-blue-light",
-    "value": "#1075E2"
-  },
-  {
-    "name": "$au-blue-lighter",
-    "value": "#AAD0F9"
-  },
-  {
-    "name": "$au-blue-lightest",
-    "value": "#DCECFD"
-  },
-  {
-    "name": "$au-blue-dark",
-    "value": "#0C56A6"
-  },
-  {
-    "name": "$au-red",
-    "value": "#DB3434"
-  },
-  {
-    "name": "$au-red-light",
-    "value": "#470000"
-  },
-  {
-    "name": "$au-red-lighter",
-    "value": "#FBE6E6"
-  },
-  {
-    "name": "$au-red-lightest",
-    "value": "#FCF3F3"
-  },
-  {
-    "name": "$au-red-dark",
-    "value": "#C32323"
-  },
-  {
-    "name": "$au-red-darker",
-    "value": "#470000"
-  },
-  {
-    "name": "$au-green",
-    "value": "#8BAE00"
-  },
-  {
-    "name": "$au-green-light",
-    "value": "#B3E000"
-  },
-  {
-    "name": "$au-green-lighter",
-    "value": "#E8EFC2"
-  },
-  {
-    "name": "$au-green-lightest",
-    "value": "#F7FAE5"
-  },
-  {
-    "name": "$au-green-dark",
-    "value": "#637A0B"
-  },
-  {
-    "name": "$au-green-darker",
-    "value": "#323D08"
-  },
-  {
-    "name": "$au-orange",
-    "value": "#FFC515"
-  },
-  {
-    "name": "$au-orange-light",
-    "value": "#FEE539"
-  },
-  {
-    "name": "$au-orange-lighter",
-    "value": "#FFF29B"
-  },
-  {
-    "name": "$au-orange-lightest",
-    "value": "#FFF9D5"
-  },
-  {
-    "name": "$au-orange-dark",
-    "value": "#7C6B3A"
-  },
-  {
-    "name": "$au-orange-darker",
-    "value": "#5C4F2B"
+    "group": "Green",
+    "colors": [
+      {
+        "name": "$au-green-100",
+        "value": "#F7FAE5",
+        "contrast": "#637A0B",
+        "contrast-value": "$au-green-700 or higher"
+      },
+      {
+        "name": "$au-green-200",
+        "value": "#ECF2CD",
+        "contrast": "#5F750B",
+        "contrast-value": "$au-green-700 or higher"
+      },
+      {
+        "name": "$au-green-400",
+        "value": "#B3E000",
+        "contrast": "#323D08",
+        "contrast-value": "$au-green-900 or higher"
+      },
+      {
+        "name": "$au-green-500",
+        "value": "#8BAE00",
+        "contrast": "#323D08",
+        "contrast-value": "$au-green-900 or higher"
+      },
+      {
+        "name": "$au-green-700",
+        "value": "#5F750B",
+        "contrast": "#F7FAE5",
+        "contrast-value": "$au-green-100 or lower"
+      },
+      {
+        "name": "$au-green-900",
+        "value": "#323D08",
+        "contrast": "#F7FAE5",
+        "contrast-value": "$au-green-100 or lower"
+      }
+    ]
   }
-
 ]

@@ -4,6 +4,8 @@ layout: documentation
 permalink: "/guidelines/architecture/"
 ---
 
+<div class="au-c-content">
+
 ## Namespaces
 
 We use a global ```.au-``` namespace. Each layer of the ITCSS architecture is also namespaced according to the rules below.
@@ -19,3 +21,5 @@ We follow the ITCSS architecture
 6. **Components:** atoms and components (namespace: ```.au-c-```)
 7. **Utilities:** single function classes (namespace: ```.au-u-```)
 8. **Shame:** quickfixes & temporary hacks
+
+</div>

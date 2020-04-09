@@ -4,6 +4,8 @@ layout: documentation
 permalink: "/guidelines/browser-support/"
 ---
 
+<div class="au-c-content">
+
 ## We develop for and test the following evergreen browsers:
 
 - Chrome (desktop)
@@ -12,3 +14,5 @@ permalink: "/guidelines/browser-support/"
 - Edge
 - Safari (desktop)
 - Safari (iOS)
+
+</div>

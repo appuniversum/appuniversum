@@ -5,11 +5,11 @@
 /* Variables
    ========================================================================== */
 
-$au-content-link-color             : $au-primary !default;
-$au-content-link-hover-color       : $au-primary-light !default;
-$au-content-link-active-color      : $au-primary-dark !default;
-$au-content-link-underline         : $au-primary-light !default;
-$au-content-link-underline-hover   : $au-primary-lighter !default;
+$au-content-link-color             : $au-blue-700 !default;
+$au-content-link-hover-color       : $au-blue-600 !default;
+$au-content-link-active-color      : $au-blue-900 !default;
+$au-content-link-underline         : $au-blue-600 !default;
+$au-content-link-underline-hover   : $au-blue-300 !default;
 
 
 /* Component
@@ -78,7 +78,7 @@ $au-content-link-underline-hover   : $au-primary-lighter !default;
     margin-top: $au-unit;
     margin-bottom: $au-unit;
     border: 0;
-    border-bottom: 3px solid $au-neutral-lighter;
+    border-bottom: 3px solid $au-gray-200;
   }
 
   > * + blockquote {
@@ -92,8 +92,8 @@ $au-content-link-underline-hover   : $au-primary-lighter !default;
   > blockquote {
     padding-top: $au-unit;
     padding-bottom: $au-unit;
-    border-top: 2px solid $au-neutral-lighter;
-    border-bottom: 2px solid $au-neutral-lighter;
+    border-top: 2px solid $au-gray-200;
+    border-bottom: 2px solid $au-gray-200;
   }
 
   > blockquote p {
@@ -159,23 +159,23 @@ $au-content-link-underline-hover   : $au-primary-lighter !default;
     padding-bottom: $au-unit-tiny/2;
     padding-left: $au-unit-tiny/2;
     padding-right: $au-unit-tiny/2;
-    background-color: $au-neutral-lightest;
+    background-color: $au-gray-100;
     border-radius: $au-radius;
-    border: 1px solid $au-neutral-lighter;
+    border: 1px solid $au-gray-200;
 
     &::-moz-selection {
-      background-color: $au-neutral-lighter;
-      color: $au-neutral-dark;
+      background-color: $au-gray-200;
+      color: $au-gray-700;
     }
 
     &::selection {
-      background-color: $au-neutral-lighter;
-      color: $au-neutral-dark;
+      background-color: $au-gray-200;
+      color: $au-gray-700;
     }
   }
 
   > pre {
-    background-color: $au-neutral-darker;
+    background-color: $au-gray-800;
     color: $au-white;
     padding: $au-unit-small;
     border-radius: $au-radius;
@@ -241,19 +241,19 @@ $au-content-link-underline-hover   : $au-primary-lighter !default;
   table {
     @include au-font-size($au-base);
     width: 100%;
-    border: .1rem solid $au-neutral-light;
+    border: .1rem solid $au-gray-300;
   }
 
   th,
   td {
     padding: $au-unit-small;
-    border-bottom: .1rem solid $au-neutral-light;
+    border-bottom: .1rem solid $au-gray-300;
     text-align: left;
   }
 
   th + th,
   td + td {
-    border-left: .1rem solid $au-neutral-light;
+    border-left: .1rem solid $au-gray-300;
   }
 
   th {

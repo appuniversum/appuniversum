@@ -5,8 +5,8 @@
 /* Variables
    ========================================================================== */
 
-$au-dropdown-color             : $au-primary !default;
-$au-dropdown-hover-color       : $au-primary-light !default;
+$au-dropdown-color             : $au-blue-700 !default;
+$au-dropdown-hover-color       : $au-blue-600 !default;
 
 
 /* Component
@@ -34,7 +34,7 @@ $au-dropdown-hover-color       : $au-primary-light !default;
   &:hover,
   &:focus {
     color: $au-dropdown-hover-color;
-    background-color: $au-neutral-lightest;
+    background-color: $au-gray-100;
   }
 
   &:focus {
@@ -43,18 +43,18 @@ $au-dropdown-hover-color       : $au-primary-light !default;
 
   .au-c-dropdown--outline & {
     background-color: $au-white;
-    border: 1px solid $au-neutral-lighter;
+    border: 1px solid $au-gray-200;
   }
 
   .au-c-dropdown--outline &,
   .au-c-dropdown--outline &:visited {
-    color: $au-neutral-darker;
+    color: $au-gray-800;
   }
 
   .au-c-dropdown--outline &:hover,
   .au-c-dropdown--outline &:focus {
-    color: $au-neutral-dark;
-    background-color: $au-neutral-lightest;
+    color: $au-gray-700;
+    background-color: $au-gray-100;
   }
 }
 
@@ -63,7 +63,7 @@ $au-dropdown-hover-color       : $au-primary-light !default;
   right: 0;
   background-color: $au-white;
   min-width: 100%;
-  box-shadow: 0 0 $au-unit-tiny rgba($au-neutral-dark,.2), 0 0 $au-unit rgba($au-neutral-dark,.1);
+  box-shadow: 0 0 $au-unit-tiny rgba($au-gray-700,.2), 0 0 $au-unit rgba($au-gray-700,.1);
 
 
   .au-c-dropdown--outline & {
@@ -85,21 +85,21 @@ $au-dropdown-hover-color       : $au-primary-light !default;
 
   &,
   &:visited {
-    color: $au-neutral-darker;
+    color: $au-gray-800;
     text-decoration: none;
   }
 
   &:hover {
-    background-color: $au-neutral-lightest;
+    background-color: $au-gray-100;
   }
 
   &:hover,
   &:focus {
-    color: $au-neutral-dark;
+    color: $au-gray-700;
   }
 
   &:focus {
-    outline: $au-outline-border/2 dashed $au-neutral-light;
+    outline: $au-outline-border/2 dashed $au-gray-300;
     outline-offset: -$au-outline-border * 2;
   }
 }

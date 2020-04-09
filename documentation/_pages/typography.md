@@ -4,6 +4,8 @@ layout: documentation
 permalink: "/foundation/typography/"
 ---
 
+<div class="au-c-content">
+
 ## Font sizes
 
 <div class="au-o-box au-d-component">
@@ -40,4 +42,6 @@ permalink: "/foundation/typography/"
   <h4 class="au-u-h2">Flanders Art Sans <span class="au-u-h4 au-u-font">(default style)</span></h4>
   <hr>
   <h4 class="au-u-h2 au-u-font-secondary">Flanders Art Serif <span class="au-u-h4 au-u-font">($au-u-font-secondary)</span></h4>
+</div>
+
 </div>
