@@ -1,7 +1,7 @@
 ---
-title: "Foundation: typography"
+title: "Utilities: Typography"
 layout: documentation
-permalink: "/foundation/typography/"
+permalink: "/utilities/typography/"
 ---
 
 <div class="au-c-content">
