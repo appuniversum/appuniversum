@@ -1,5 +1,5 @@
 ---
-title: Architecture and namespaces
+title: Architecture and Namespaces
 layout: documentation
 permalink: "/guidelines/architecture/"
 ---

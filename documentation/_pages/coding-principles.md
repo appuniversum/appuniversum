@@ -1,5 +1,5 @@
 ---
-title: Coding principles
+title: Coding Principles
 layout: documentation
 permalink: "/guidelines/coding-principles/"
 ---
@@ -22,6 +22,6 @@ Avoid reliance on other bits.
 ## Keep it simple
 
 - **The Principle of Least Surprise:** make sure expectations are met, and nothing else
-- **Murphy’s Law:** Pick the option that is the most resilient, 
+- **Murphy’s Law:** Pick the option that is the most resilient,
 
 </div>

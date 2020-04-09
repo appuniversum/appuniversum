@@ -1,5 +1,5 @@
 ---
-title: "Foundation: colors"
+title: "Foundation: Colors"
 layout: documentation
 permalink: "/foundation/colors/"
 ---

@@ -1,5 +1,5 @@
 ---
-title: Browser support
+title: Browser Support
 layout: documentation
 permalink: "/guidelines/browser-support/"
 ---
