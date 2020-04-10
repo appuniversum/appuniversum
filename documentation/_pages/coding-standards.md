@@ -1,5 +1,5 @@
 ---
-title: Coding standards
+title: Coding Standards
 layout: documentation
 permalink: "/guidelines/coding-standards/"
 ---

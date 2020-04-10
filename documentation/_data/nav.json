@@ -31,10 +31,20 @@
     {
       "title": "Colors",
       "url": "/foundation/colors/"
-    },
+    }
+  ],
+  "utilities": [
     {
       "title": "Typography",
-      "url": "/foundation/typography/"
+      "url": "/utilities/typography/"
+    },
+    {
+      "title": "Visible",
+      "url": "/utilities/visible/"
+    },
+    {
+      "title": "Hide",
+      "url": "/utilities/hide/"
     }
   ],
   "cta": [

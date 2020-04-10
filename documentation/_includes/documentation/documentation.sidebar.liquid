@@ -27,6 +27,13 @@
           </li>
           {% endfor %}
 
+          <li class="au-c-list-navigation__item au-c-list-navigation__item--section">Utilities:</li>
+          {% for item in nav.utilities %}
+          <li class="au-c-list-navigation__item ">
+            <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+
           <li class="au-c-list-navigation__item au-c-list-navigation__item--section">Components:</li>
           <li class="au-c-list-navigation__item ">
             <a href="https://appuniversum.github.io/ember-appuniversum/" class="au-c-list-navigation__link">Ember-components</a>
