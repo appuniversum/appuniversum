@@ -1,22 +1,19 @@
 # Appuniversum
 
-A design universe for Flanders goverment applications.
+A design universe for Flanders Government applications.
 
 The goal of this project is to maintain a CSS framework that is easy to use, extendable, accessible and performant.
-
-You are free to copy, modify, and distribute Appuniversum, even for commercial purposes, without asking for permission. For any third-party code please refer to the corresponding license included in this project.
 
 ## How to use
 
 ### Install
 
-To install run `npm install`
+To install run `npm install`.
 
 ### Run
 
 * `npm start`: runs a [browser-sync](https://www.browsersync.io/) server and watch for code changes.
 * `npm run build`: build the site to the `_site` folder.
-
 
 ### Dependencies
 
@@ -39,3 +36,7 @@ This project is a proof of concept and feedback is very much welcome. In order t
 
 - CSS architecture guided by ideas from [Ygdir](https://github.com/mono-company/ygdir) by [Mono](https://mono.company/).
 - [InuitCSS](https://github.com/inuitcss/inuitcss) by [@csswizardry](https://twitter.com/csswizardry).
+
+## License
+
+Appuniversum is MIT licensed. See LICENSE.txt.
