@@ -1,0 +1,142 @@
+/* ==================================
+   #HEADER
+   ================================== */
+
+/* Variables
+   ========================================================================== */
+
+$au-main-header-bg                : $au-white !default;
+$au-main-header-border            : $au-gray-300 !default;
+$au-main-header-color             : $au-gray-800 !default;
+$au-main-header-hover-color       : $au-gray-700 !default;
+$au-main-header-active-color      : $au-blue-900 !default;
+$au-main-header-divider-rotation  : -19deg !default;
+
+/* Component
+   ========================================================================== */
+
+.au-c-main-header {
+  position: relative;
+  z-index: $au-z-index-alpha;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $au-main-header-bg;
+  box-shadow: 0 1px 3px rgba($au-gray-900, .1), 0 4px 20px rgba($au-gray-900, .035), 0 1px 1px rgba($au-gray-900, .025);
+}
+
+.au-c-main-header__title-group {
+  display: flex;
+  align-items: center;
+  color: $au-main-header-color;
+  text-decoration: none;
+}
+
+.au-c-main-header__title {
+  @include au-font-size($au-base,1);
+  font-weight: $au-medium;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  padding: $au-unit-tiny;
+  color: $au-main-header-color;
+  transition: color $au-transition, text-decoration-color $au-transition;
+  letter-spacing: .03ex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: $au-unit-huge;
+
+  @include mq(xsmall) {
+    max-width: $au-unit-huge*1.5;
+  }
+
+  @include mq(small) {
+    margin-left: 0;
+    padding-left: $au-unit;
+    max-width: $au-unit-huge*2;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: .5rem;
+      transform: rotate($au-main-header-divider-rotation);
+      width: .1rem;
+      height: 3rem;
+      background-color: $au-main-header-border;
+    }
+  }
+
+  @include mq(medium) {
+    max-width: initial;
+  }
+}
+
+.au-c-main-header__title--link {
+  text-decoration: underline;
+  text-underline-offset: .3ex;
+
+  &,
+  &:visited {
+    color: $au-main-header-color;
+    text-decoration-color: tint($au-main-header-color,70);
+  }
+
+  &:hover,
+  &:focus {
+    color: $au-main-header-hover-color;
+    text-decoration: underline;
+    text-decoration-color: tint($au-main-header-hover-color,80);
+  }
+
+  &:focus {
+    outline: $au-outline;
+  }
+}
+
+.au-c-main-header__skiplink {
+  @include au-font-size($au-base,1);
+  font-weight: $au-regular;
+  position: absolute;
+  transition: color $au-transition;
+  letter-spacing: .03ex;
+  margin-left: $au-unit-small;
+  padding: $au-unit-tiny;
+  background-color: $au-gray-100;
+  border-radius: $au-radius;
+  z-index: $au-z-index-alpha;
+  top: -1000px;
+  left: -1000px;
+
+  &,
+  &:hover,
+  &:focus {
+    color: $au-gray-800;
+    text-decoration: underline;
+    text-decoration-color: tint($au-gray-800,80);
+  }
+
+  &:focus {
+    outline: $au-outline;
+    top: $au-unit-large;
+    left: -$au-unit-tiny;
+  }
+
+  @include mq(medium) {
+    position: relative;
+
+    &:focus {
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.au-c-main-header__actions {
+  @include au-font-size($au-base,.7);
+  display: flex;
+  align-items: center;
+  padding: $au-unit-tiny $au-unit-small ;
+}

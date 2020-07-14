@@ -1,0 +1,75 @@
+/* ==================================
+   #LINKS
+   ================================== */
+
+/* Variables
+   ========================================================================== */
+
+$au-link-color                       : $au-blue-700 !default;
+$au-link-hover-color                 : $au-blue-600 !default;
+$au-link-active-color                : $au-gray-900 !default;
+$au-link-secondary-color             : $au-gray-800 !default;
+$au-link-secondary-hover-color       : $au-gray-700 !default;
+$au-link-secondary-active-color      : $au-gray-900 !default;
+
+/* Component
+  ========================================================================== */
+
+.au-c-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: $au-font;
+  transition: color $au-transition, text-decoration $au-transition;
+  font-weight: $au-regular;
+  text-decoration-color: tint($au-link-color,70);
+
+  &,
+  &:visited {
+    color: $au-link-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $au-link-hover-color;
+    text-decoration-color: tint($au-link-hover-color,80);
+  }
+
+  &:focus {
+    outline: $au-outline;
+    outline-offset: $au-unit-tiny/2;
+  }
+
+  &.is-active {
+    font-weight: $au-medium;
+    color: $au-link-active-color;
+    text-decoration: none;
+    pointer-events: none;
+  }
+}
+
+
+/* Modifiers
+  ========================================================================== */
+
+.au-c-link--secondary {
+  &,
+  &:visited {
+    color: $au-link-secondary-color;
+    text-decoration-color: tint($au-link-secondary-color,70);
+  }
+
+  &:hover,
+  &:focus {
+    color: $au-link-secondary-hover-color;
+    text-decoration-color: tint($au-link-secondary-hover-color,80);
+  }
+
+  .is-active > & {
+    color: $au-link-active-color;
+    text-decoration: none;
+  }
+
+  &.is-active {
+    color: $au-link-secondary-active-color;
+  }
+}

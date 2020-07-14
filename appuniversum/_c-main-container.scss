@@ -1,0 +1,46 @@
+/* ==================================
+   #MAIN CONTAINER
+   ================================== */
+
+/* Variables
+   ========================================================================== */
+
+$au-main-container-height: calc(100vh - 4.2rem) !default;
+
+/* Component
+   ========================================================================== */
+
+.au-c-main-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mq(medium) {
+    height: $au-main-container-height;
+  }
+}
+
+.au-c-main-container__sidebar {
+  flex-basis: 100%;
+
+  @include mq(medium) {
+    height: 100%;
+    flex-basis: 25rem;
+    flex-grow: 1;
+  }
+}
+
+.au-c-main-container__content {
+  flex-basis: 100%;
+  max-width: 100%;
+
+  @include mq(medium) {
+    height: 100%;
+    flex-basis: 0;
+    flex-grow: 999;
+  }
+}
+
+.au-c-main-container__content--scroll {
+  height: 100%;
+  overflow: auto;
+}

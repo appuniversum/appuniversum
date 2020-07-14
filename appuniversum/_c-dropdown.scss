@@ -1,0 +1,222 @@
+/* ==================================
+   #DROPDOWN
+   ================================== */
+
+/* Variables
+   ========================================================================== */
+
+$au-dropdown-color             : $au-blue-700 !default;
+$au-dropdown-hover-color       : $au-blue-600 !default;
+$au-dropdown-active-color      : $au-blue-600 !default;
+$au-dropdown-visited-color     : $au-blue-900 !default;
+$au-dropdown-active-color      : $au-blue-900 !default;
+$au-dropdown-underline         : $au-blue-600 !default;
+$au-dropdown-underline-hover   : $au-blue-300 !default;
+$au-dropdown-caret-size        : .4rem !default;
+
+/* Component
+   ========================================================================== */
+
+.au-c-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.au-c-dropdown__toggle {
+  @include au-font-size($au-base,1.2);
+  font-weight: $au-regular;
+  color: $au-dropdown-color;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: $au-unit-tiny;
+  border-radius: $au-radius;
+
+  &:focus-within {
+    outline: $au-outline;
+  }
+
+  &,
+  &:visited {
+    color: $au-dropdown-color;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    color: $au-dropdown-hover-color;
+    background-color: $au-gray-100;
+  }
+
+  &:focus,
+  &:focus-within {
+    outline: $au-outline;
+  }
+
+  .au-c-dropdown--left & {
+    flex-direction: row-reverse;
+  }
+}
+
+.au-c-dropdown__name {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: $au-unit-large;
+
+  @include mq(xsmall) {
+    max-width: $au-unit-huge;
+  }
+
+  @include mq(small) {
+    width: auto;
+    max-width: $au-unit-huge*4;
+  }
+}
+
+.au-c-dropdown__button {
+  @include au-font-size($au-base,1);
+  border: 0;
+  padding: 0;
+  margin-left: $au-unit-tiny;
+  display: inline-flex;
+  align-items: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &,
+  &:visited,
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  .au-c-dropdown--left & {
+    margin-left: 0;
+    margin-right: $au-unit-tiny;
+  }
+}
+
+.au-c-dropdown__menu {
+  @include au-font-size($au-base,1.5);
+  font-family: $au-font;
+  font-weight: $au-regular;
+  position: absolute;
+  z-index: $au-z-index-beta;
+  background-color: $au-white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100%;
+  width: auto;
+  top: $au-unit + $au-unit-tiny;
+  box-shadow: 0 0 12px rgba($au-gray-900,.15), 0 0 2px rgba($au-gray-900,.1);
+  border-radius: $au-radius;
+  display: none;
+
+  &:before,
+  &:after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: $au-dropdown-caret-size;
+    margin-left: -$au-dropdown-caret-size/2;
+  }
+
+  &:before {
+    border-color: rgba($au-white, 0);
+    border-bottom-color: $au-gray-200;
+  }
+
+  &:after {
+    border-color: rgba($au-white, 0);
+    border-bottom-color: $au-white;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.is-visible {
+    display: flex;
+  }
+
+  // Modify the menu position
+  .au-c-dropdown--left &,
+  .au-c-dropdown--right & {
+    transform: none;
+    text-align: left;
+  }
+
+  .au-c-dropdown--left & {
+    left: 0;
+  }
+
+  .au-c-dropdown--right & {
+    left: auto;
+    right: 0;
+  }
+
+  .au-c-dropdown--left &:before,
+  .au-c-dropdown--left &:after {
+    left: $au-unit-tiny + $au-dropdown-caret-size;
+  }
+
+  .au-c-dropdown--right &:before,
+  .au-c-dropdown--right &:after {
+    left: calc(100% - #{$au-unit-small + $au-dropdown-caret-size/2});
+  }
+}
+
+.au-c-dropdown__menu [role="menuitem"] {
+  padding: $au-unit-small;
+  height: auto;
+  overflow: hidden;
+  text-decoration: none;
+
+  &:first-child {
+    border-top-right-radius: $au-radius;
+    border-top-left-radius: $au-radius;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: $au-radius;
+    border-bottom-left-radius: $au-radius;
+  }
+
+  &.active {
+    color: $au-gray-800;
+    background-color: $au-gray-100;
+    font-weight: $au-medium;
+    outline-offset: -.2rem;
+  }
+
+  &:focus,
+  &.active:focus {
+    outline: $au-outline;
+    outline-offset: -.2rem;
+  }
+}
+
+.au-c-dropdown__menu [role="menuitem"] + [role="menuitem"] {
+  border-top: 1px dotted $au-gray-300;
+}
