@@ -188,3 +188,16 @@
 .au-o-grid--stretch {
   height: 100%;
 }
+
+
+/**
+ * Fix the grid in the available space
+ */
+.au-o-grid--fixed {
+  height: 100%;
+  overflow: hidden;
+
+  > .au-o-grid__item {
+    height: 100%;
+  }
+}
