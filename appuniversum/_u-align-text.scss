@@ -5,15 +5,10 @@
 /**
  * Utility classes to align text. Use text alignment like this:
  *
- *   <p class="au-u-text-right">
+ *   <p class="au-u-text-right au-u-text-left@medium">
  *      text
  *   </p>
  *
- *   <div class="au-u-text-right">
- *      <button class="au-c-button">
- *        Button
- *      </button>
- *   </div>
  */
 
 /* Classes
@@ -29,4 +24,25 @@
 
 .au-u-text-left {
   text-align: left;
+}
+
+/* Breakpoints
+  ========================================================================== */
+
+@if (variable-exists(mq-breakpoints)) {
+  @each $au-bp-name, $au-bp-value in $mq-breakpoints {
+    @include mq($from: $au-bp-name) {
+      .au-u-text-right\@#{$au-bp-name} {
+        text-align: right;
+      }
+
+      .au-u-text-center\@#{$au-bp-name} {
+        text-align: center;
+      }
+
+      .au-u-text-left\@#{$au-bp-name} {
+        text-align: left;
+      }
+    }
+  }
 }
