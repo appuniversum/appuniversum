@@ -32,15 +32,6 @@
  * Hide elements visually and on screen readers starting from certain breakpoints, but show visually and for screen readers on others.
  */
 
- // Breakpoints
-// ---
-$mq-breakpoints: (
-  xsmall: 500px,
-  small: 767px,
-  medium: 1023px,
-  large: 1600px
-);
-
 @if (variable-exists(mq-breakpoints)) {
   @each $au-bp-name, $au-bp-value in $mq-breakpoints {
     @include mq($from: $au-bp-name) {
