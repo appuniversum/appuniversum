@@ -8,7 +8,7 @@ permalink: "/objects/region/"
 
 ## Region
 
-`au-o-region`: Creates even spaced responsive region using the default spacing variables.
+`.au-o-region`: Creates even spaced responsive region using the default spacing variables.
 
 <div class="au-o-region au-d-component">
   <div class="au-o-box au-u-text-center ">

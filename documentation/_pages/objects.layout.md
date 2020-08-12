@@ -8,7 +8,7 @@ permalink: "/objects/layout/"
 
 ## Layout
 
-`au-o-layout`: Horizontal centered layout object with a maximum width and left/right padding.
+`.au-o-layout`: Horizontal centered layout object with a maximum width and left/right padding.
 
 <div class="au-o-layout">
   <div class="au-o-box au-u-text-center  au-d-component">

@@ -8,8 +8,8 @@ permalink: "/objects/grid/"
 
 ## Grid
 
-`au-o-grid`: Main grid container
-`au-o-grid__item`: Grid item (default is full width)
+`.au-o-grid`: Main grid container
+`.au-o-grid__item`: Grid item (default is full width)
 
 <div class="au-o-box au-o-box--flush">
   <div class="au-o-grid">
@@ -23,7 +23,7 @@ permalink: "/objects/grid/"
 
 ## Combined with width utilities
 
-`au-u-1-2`: Available widths are defined with fractions (defined in `_s-global.scss`)
+`.au-u-1-2`: Available widths are defined with fractions (defined in `_s-global.scss`)
 
 <div class="au-o-box au-o-box--flush">
   <div class="au-o-grid">
@@ -42,7 +42,7 @@ permalink: "/objects/grid/"
 
 ## Responsive
 
-`au-u-1-2@medium`: Add breakpoints to create a responsive grid (defined in `_s-global.scss`)
+`.au-u-1-2@medium`: Add breakpoints to create a responsive grid (defined in `_s-global.scss`)
 
 <div class="au-o-box au-o-box--flush">
   <div class="au-o-grid">
@@ -61,7 +61,7 @@ permalink: "/objects/grid/"
 
 ## Gutter modifier
 
-`au-o-grid--flush`: no gutter
+`.au-o-grid--flush`: no gutter
 
 <div class="au-o-box au-o-box--flush">
   <div class="au-o-grid au-o-grid--flush">
@@ -78,7 +78,7 @@ permalink: "/objects/grid/"
   </div>
 </div>
 
-`au-o-grid--tiny`: tiny gutter
+`.au-o-grid--tiny`: tiny gutter
 
 <div class="au-o-box au-o-box--flush">
   <div class="au-o-grid au-o-grid--tiny">
@@ -95,7 +95,7 @@ permalink: "/objects/grid/"
   </div>
 </div>
 
-`au-o-grid--small`: small gutter
+`.au-o-grid--small`: small gutter
 
 <div class="au-o-box au-o-box--flush">
   <div class="au-o-grid au-o-grid--small">
@@ -112,7 +112,7 @@ permalink: "/objects/grid/"
   </div>
 </div>
 
-`au-o-grid--large`: large gutter
+`.au-o-grid--large`: large gutter
 
 <div class="au-o-box au-o-box--flush">
   <div class="au-o-grid au-o-grid--large">
@@ -131,12 +131,12 @@ permalink: "/objects/grid/"
 
 ## Fill and aligment modifiers
 
-`au-o-grid--middle`: Align all grid items to the middles of each other.
-`au-o-grid--bottom`: Align all grid items to the bottoms of each other.
-`au-o-grid--center`: Fill up the grid system from the centre.
-`au-o-grid--right`:  Fill up the grid system from the right-hand side.
-`au-o-grid--reverse`: Reverse the rendered order of the grid system.
-`au-o-grid--stretch`: Stretch the grid in the available space.
-`au-o-grid--fixed`: Fix the grid in the available space (height and width).
+`.au-o-grid--middle`: Align all grid items to the middles of each other.
+`.au-o-grid--bottom`: Align all grid items to the bottoms of each other.
+`.au-o-grid--center`: Fill up the grid system from the centre.
+`.au-o-grid--right`:  Fill up the grid system from the right-hand side.
+`.au-o-grid--reverse`: Reverse the rendered order of the grid system.
+`.au-o-grid--stretch`: Stretch the grid in the available space.
+`.au-o-grid--fixed`: Fix the grid in the available space (height and width).
 
 <div>
