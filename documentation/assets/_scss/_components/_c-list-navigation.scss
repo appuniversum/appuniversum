@@ -9,43 +9,62 @@ $au-list-navigation-border-color: $au-gray-200 !default;
 
 
 /* Component
-   ========================================================================== */
+  ========================================================================== */
 
 .au-c-list-navigation {
   @include au-font-size($au-base);
-  border-top: 1px solid $au-list-navigation-border-color;
+  display: flex;
+  flex-wrap: wrap;
 
-  @include mq(small) {
+  @include mq(medium) {
     @include au-font-size(1.5rem);
   }
 }
 
 .au-c-list-navigation__item {
-  & + & {
-    border-top: 1px solid $au-list-navigation-border-color;
+  flex-basis: 20rem;
+
+  @include mq(medium) {
+    flex-basis: 100%;
+
+    & + & {
+      border-top: 1px solid $au-list-navigation-border-color;
+    }
   }
 }
 
 .au-c-list-navigation__item--section {
-  @include au-font-size(1.4rem,.7);
-  padding: $au-unit-tiny $au-unit-large;
-  font-weight: $au-medium;
-  color: $au-gray-700;
-  text-transform: uppercase;
+  flex-basis: 100%;
 
-  @include mq(small) {
-    padding: $au-unit-small * 1.5 $au-unit-small;
+  & + & {
+    border-top: 1px solid $au-list-navigation-border-color;
+  }
+
+  @include mq(medium) {
+  }
+}
+
+.au-c-list-navigation__section-title {
+  @include au-font-size(1.4rem);
+  padding: $au-unit-tiny * 1.5 $au-unit-small;
+  font-weight: $au-medium;
+  color: $au-gray-600;
+  text-transform: uppercase;
+  border-bottom: 1px solid $au-list-navigation-border-color;
+
+  @include mq(medium) {
+    padding: $au-unit-small $au-unit-small + $au-unit-tiny;
   }
 }
 
 .au-c-list-navigation__link {
-  @include au-font-size($au-base, 1.5);
+  @include au-font-size($au-base);
   display: flex;
   align-items: center;
   font-family: $au-font;
   transition: color $au-transition, text-decoration $au-transition;
   font-weight: $au-regular;
-  padding: $au-unit-small * 1.5 $au-unit-small;
+  padding: $au-unit-tiny * 1.5 $au-unit-small;
   text-decoration-color: $au-blue-300 !important; // @TODO: remove important when webuniversum is removed
   text-decoration: underline;
   text-underline-offset: .3ex;
@@ -58,7 +77,7 @@ $au-list-navigation-border-color: $au-gray-200 !default;
   &:hover,
   &:focus {
     color: $au-blue-600;
-    text-decoration-color: $au-blue-300;
+    text-decoration-color: $au-blue-300 !important;
   }
 
   &:focus {
@@ -66,20 +85,23 @@ $au-list-navigation-border-color: $au-gray-200 !default;
     outline-offset: -.2rem;
   }
 
-  &:focus:not(:focus-visible) {
-    outline: none
-  }
-
   // @TODO: change to state class > is-active
   &.active {
     font-weight: $au-medium;
     color: $au-gray-900;
     text-decoration: none;
-    box-shadow: inset -.3rem 0 0 $au-gray-300;
-    background-color: $au-gray-200;
   }
 
-  @include mq(small) {
-    padding: $au-unit-small * 1.5 $au-unit-small;
+  @include mq(medium) {
+    padding: $au-unit-small $au-unit-small + $au-unit-tiny;
+
+    &.active {
+      box-shadow: inset -.3rem 0 0 $au-gray-300;
+      background-color: $au-gray-200;
+    }
   }
+}
+
+.au-c-list-navigation__link--highlight {
+  font-weight: $au-medium;
 }
