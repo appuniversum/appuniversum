@@ -13,10 +13,49 @@ The below box is hidden only visually, but is <a href="http://snook.ca/archives/
   <p>I get picked up by screen readers.</p>
 </div>
 
+<hr>
 
 ## Both hidden visually and for screenreaders
 The below box is hidden both visually as for screen readers.
 
 <div class="au-o-box au-d-component au-u-hidden">
   <p>You cannot see nor read me with a screenreader, except for in the code.</p>
+</div>
+
+<hr>
+
+## Responsive hiding
+
+### Hidden for screens larger than extra small
+#### Visible on extra small
+
+The box below is visible on extra small sizes, but hidden on larger responsive sizes:
+<div class="au-o-box au-d-component au-u-hidden-from@xsmall">
+  <p>Your screen width is extra small. Make your screen larger to see me disappear. Toggle me with .au-u-hidden-small-from@xsmall</p>
+</div>
+
+### Hidden for screens larger than small
+#### Visible on small screens and below
+
+The box below is visible on small sizes, but hidden on larger responsive sizes:
+<div class="au-o-box au-d-component au-u-hidden-from@small">
+  <p>Your screen width is small and below. Make your screen larger to see me disappear. Toggle me with .au-u-hidden-small-from@small</p>
+</div>
+
+### Hidden for screens larger than medium
+#### Visible on medium screens and below
+
+The box below is visible on medium sizes, but hidden on larger responsive sizes:
+<div class="au-o-box au-d-component au-u-hidden-from@medium">
+  <p>Your screen width is medium and below. Make your screen larger to see me disappear. Toggle me with .au-u-hidden-from@medium</p>
+</div>
+
+### Hidden for screens larger than large
+#### Visible on large screens and below
+
+The box below is visible on large sizes, but hidden on larger responsive sizes:
+<div class="au-o-box au-d-component au-u-hidden-from@large">
+  <p>Your screen width is large and below. Make your screen larger to see me disappear. Toggle me with .au-u-hidden-from@large</p>
+</div>
+
 </div>
