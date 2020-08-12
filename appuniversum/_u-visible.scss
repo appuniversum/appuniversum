@@ -9,7 +9,7 @@
 @if (variable-exists(mq-breakpoints)) {
   @each $au-bp-name, $au-bp-value in $mq-breakpoints {
     @include mq($until: $au-bp-name) {
-      .au-u-visible-until\@#{$au-bp-name} {
+      .au-u-visible-from\@#{$au-bp-name} {
         display: none !important;
       }
     }
