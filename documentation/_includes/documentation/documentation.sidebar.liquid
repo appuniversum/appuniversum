@@ -37,6 +37,19 @@
 
         <li class="au-c-list-navigation__item au-c-list-navigation__item--section">
           <h2 class="au-c-list-navigation__section-title">
+            Objects:
+          </h2>
+          <ul class="au-c-list-navigation">
+            {% for item in nav.objects %}
+            <li class="au-c-list-navigation__item ">
+              <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li class="au-c-list-navigation__item au-c-list-navigation__item--section">
+          <h2 class="au-c-list-navigation__section-title">
             Utilities:
           </h2>
           <ul class="au-c-list-navigation">
@@ -47,7 +60,6 @@
             {% endfor %}
           </ul>
         </li>
-
 
         <li class="au-c-list-navigation__item au-c-list-navigation__item--section">
           <h2 class="au-c-list-navigation__section-title">

@@ -33,7 +33,41 @@
       "url": "/foundation/colors/"
     }
   ],
+  "objects": [
+    {
+      "title": "Box",
+      "url": "/objects/box/"
+    },
+    {
+      "title": "Flow",
+      "url": "/objects/flow/"
+    },
+    {
+      "title": "Grid",
+      "url": "/objects/grid/"
+    },
+    {
+      "title": "Layout",
+      "url": "/objects/layout/"
+    },
+    {
+      "title": "Region",
+      "url": "/objects/region/"
+    }
+  ],
   "utilities": [
+    {
+      "title": "Align text",
+      "url": "/utilities/align-text/"
+    },
+    {
+      "title": "Hide",
+      "url": "/utilities/hide/"
+    },
+    {
+      "title": "Spacing",
+      "url": "/utilities/spacing/"
+    },
     {
       "title": "Typography",
       "url": "/utilities/typography/"
@@ -43,8 +77,12 @@
       "url": "/utilities/visible/"
     },
     {
-      "title": "Hide",
-      "url": "/utilities/hide/"
+      "title": "Print",
+      "url": "/utilities/print/"
+    },
+    {
+      "title": "Widths",
+      "url": "/utilities/widths/"
     }
   ],
   "cta": [
