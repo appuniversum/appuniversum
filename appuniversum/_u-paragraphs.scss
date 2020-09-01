@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #PARAGRAPHS
+   ========================================================================== */
+/**
+ * Utility classes to style text. Use text alignment like this:
+ *
+ *   <p class="au-u-small-text">
+ *      text
+ *   </p>
+ *
+ *   <p class="au-u-info-text">
+ *      text
+ *   </p>
+ *
+ */
+
+/* Classes
+  ========================================================================== */
+
+// Small
+.au-c-small-text {
+  @include au-font-size($au-base);
+  font-family: $au-font;
+  font-weight: $au-regular;
+  color: $au-gray-800;
+}
+
+// Info text
+.au-c-info-text {
+  @include au-font-size($au-base);
+  font-family: $au-font;
+  font-weight: $au-regular;
+  color: $au-gray-700;
+  font-style: italic;
+}
