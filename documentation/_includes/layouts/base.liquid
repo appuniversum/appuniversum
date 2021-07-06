@@ -13,11 +13,7 @@
     {% comment %}
     Stylesheets
     {% endcomment %}
-    {% if project.environment == "development" %}
-    <link rel="stylesheet" href="/assets/css/screen.css">
-    {% else %}
-    <link rel="stylesheet" href="{{site.path}}/assets/build/{{ manifest['screen.min.css'] }}">
-    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/styles/screen.css' | url }}">
 
     {% comment %}
     Favicons
@@ -36,10 +32,7 @@
   <body>
     {{ content }}
 
-    {% if project.environment == "development" %}
-    <script src="/assets/js/scripts.js"></script>
-    {% else %}
-    <script src="{{site.path}}/assets/build/{{ manifest['scripts.js'] }}"></script>
-    {% endif %}
+    <script type="text/javascript" src="{{ '/assets/scripts/main.js' | url }}"></script>
+    <!--! LAST BUILD: {{ build.env}} {{ build.timestamp | dateToISO }} -->
   </body>
 </html>

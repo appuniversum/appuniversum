@@ -1,7 +1,13 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const filters = require('./utils/filters.js')
 
 // Eleventy config
 module.exports = function(eleventyConfig) {
+  // Filters
+  Object.keys(filters).forEach((filterName) => {
+    eleventyConfig.addFilter(filterName, filters[filterName])
+  })
+
   // ---
   // Markdown
   // ---
@@ -72,8 +78,8 @@ module.exports = function(eleventyConfig) {
   // ---
   return {
     dir: {
-      input: "./documentation",   // Source
-      output: "./_site" // Destination
+      input: 'documentation',
+      output: '_site'
     },
     passthroughFileCopy: true,
     htmlTemplateEngine: "liquid",
