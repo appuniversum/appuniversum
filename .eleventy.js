@@ -14,8 +14,9 @@ module.exports = function(config) {
   })
 
   // Asset Watch Targets
-  config.addWatchTarget('./documentation/assets')
   config.addWatchTarget('./appuniversum')
+  config.addWatchTarget('./appuniversum.scss')
+  config.addWatchTarget('./documentation/assets')
 
   // ---
   // Markdown

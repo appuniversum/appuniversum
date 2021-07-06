@@ -79,7 +79,7 @@ $au-outline: $au-outline-border $au-outline-border-style $au-yellow-400;
 
 
 // Transitions
-$au-duration: (1/8) + s;
+$au-duration: (1*.125) + s;
 $au-easing: cubic-bezier(0.190,  1.000, 0.220, 1.000);
 $au-transition: $au-duration $au-easing;
 

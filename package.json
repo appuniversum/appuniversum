@@ -9,11 +9,11 @@
   },
   "scripts": {
     "start": "run-s dev",
-    "sass:build": "node-sass --output-style expanded --source-map-embed appuniversum.scss appuniversum.css",
-    "sass:minified": "cleancss --format breaksWith=lf --output appuniversum.min.css appuniversum.css",
-    "sass": "run-s sass:build sass:minified",
+    "css:build": "sass --style expanded --embed-source-map appuniversum.scss appuniversum.css",
+    "css:minified": "cleancss --format breaksWith=lf --output appuniversum.min.css appuniversum.css",
+    "css": "run-s css:build css:minified",
     "dev": "run-s clean eleventy:dev --print-label",
-    "build": "run-s clean sass sass eleventy:prod --print-label",
+    "build": "run-s clean css eleventy:prod --print-label",
     "eleventy:dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "eleventy:prod": "cross-env ELEVENTY_ENV=production eleventy",
     "clean": "del-cli _site",
@@ -37,9 +37,9 @@
     "luxon": "^1.25.0",
     "markdown-it": "^12.1.0",
     "markdown-it-attrs": "^4.0.0",
-    "node-sass": "^6.0.1",
     "npm-run-all": "^4.1.5",
-    "require-dir": "^1.2.0"
+    "require-dir": "^1.2.0",
+    "sass": "^1.35.1"
   },
   "browserslist": [
     "last 1 Chrome version",

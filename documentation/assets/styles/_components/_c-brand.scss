@@ -79,9 +79,9 @@ $au-brand-divider-rotation     : -20deg;
   font-family: $au-font;
   font-weight: $au-medium;
   color: $au-brand-text;
-  margin-left: -$au-unit-small + $au-unit-tiny/2;
+  margin-left: -$au-unit-small + $au-unit-tiny*.5;
   margin-right: $au-unit-small;
-  padding-right: $au-unit-small + $au-unit-tiny/2;
+  padding-right: $au-unit-small + $au-unit-tiny*.5;
   transition: color $au-transition;
 
   &::after {

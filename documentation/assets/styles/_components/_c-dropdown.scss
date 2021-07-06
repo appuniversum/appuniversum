@@ -23,7 +23,7 @@ $au-dropdown-hover-color       : $au-blue-600 !default;
   font-weight: $au-regular;
   text-align: left;
   border: 0;
-  padding: $au-unit-tiny/2 $au-unit-tiny;
+  padding: $au-unit-tiny*.5 $au-unit-tiny;
   border-radius: $au-radius;
 
   &,
@@ -99,7 +99,7 @@ $au-dropdown-hover-color       : $au-blue-600 !default;
   }
 
   &:focus {
-    outline: $au-outline-border/2 dashed $au-gray-300;
+    outline: $au-outline-border*.5 dashed $au-gray-300;
     outline-offset: -$au-outline-border * 2;
   }
 }
