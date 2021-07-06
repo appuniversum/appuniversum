@@ -15,7 +15,7 @@ jobs:
       - name: Compile
         uses: elstudio/actions-js-build/build@v2
         with:
-          args: run build
+          args: run deploy
       - name: Deploy
         if: success()
         uses: crazy-max/ghaction-github-pages@v1
