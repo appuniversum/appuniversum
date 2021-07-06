@@ -1,40 +1,48 @@
+const markdownIt = require('markdown-it');
+const markdownItAttrs = require('markdown-it-attrs');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const filters = require('./utils/filters.js')
 
 // Eleventy config
-module.exports = function(eleventyConfig) {
+module.exports = function(config) {
+  // Plugins
+  config.addPlugin(syntaxHighlight)
+
   // Filters
   Object.keys(filters).forEach((filterName) => {
-    eleventyConfig.addFilter(filterName, filters[filterName])
+    config.addFilter(filterName, filters[filterName])
   })
+
+  // Asset Watch Targets
+  config.addWatchTarget('./documentation/assets')
+  config.addWatchTarget('./appuniversum')
 
   // ---
   // Markdown
   // ---
-  let markdownIt = require("markdown-it");
-  let markdownItAttrs = require('markdown-it-attrs');
   let options = {
     html: true,
     breaks: true,
     linkify: true,
+    typographer: true
   };
   let markdownLib = markdownIt(options).use(markdownItAttrs).disable('code');
 
-  eleventyConfig.setLibrary("md", markdownLib);
+  config.setLibrary("md", markdownLib);
 
   // ---
   // Aliases
   // ---
-  eleventyConfig.addLayoutAlias('base', 'layouts/base.liquid');
-  eleventyConfig.addLayoutAlias('default', 'layouts/default.liquid');
-  eleventyConfig.addLayoutAlias('documentation', 'layouts/documentation.liquid');
-  eleventyConfig.addLayoutAlias('component', 'layouts/component.liquid');
+  config.addLayoutAlias('base', 'layouts/base.liquid');
+  config.addLayoutAlias('default', 'layouts/default.liquid');
+  config.addLayoutAlias('documentation', 'layouts/documentation.liquid');
+  config.addLayoutAlias('component', 'layouts/component.liquid');
 
   // ---
   // Collections
   // ---
   // Components > sorted by name
-  eleventyConfig.addCollection('components', collection => {
+  config.addCollection('components', collection => {
     return collection.getFilteredByGlob('documentation/components/*.md').sort((a, b) => {
       return b.date - a.date;
     });
@@ -42,7 +50,7 @@ module.exports = function(eleventyConfig) {
 
 
   // Patterns > sorted by name
-  eleventyConfig.addCollection('patterns', collection => {
+  config.addCollection('patterns', collection => {
     return collection.getFilteredByGlob('documentation/patterns/*.md').sort((a, b) => {
       return b.date - a.date;
     });;
@@ -52,22 +60,23 @@ module.exports = function(eleventyConfig) {
   // ---
   // Plugins
   // ---
-  eleventyConfig.addPlugin(syntaxHighlight);
+  config.addPlugin(syntaxHighlight);
 
   // ---
   // Copy static files to the compiled site folder
   // ---
-  eleventyConfig.addPassthroughCopy('documentation/assets/img');
-  eleventyConfig.addPassthroughCopy('documentation/assets/build');
-  eleventyConfig.addPassthroughCopy('documentation/favicon.png');
-  eleventyConfig.addPassthroughCopy('documentation/favicon.ico');
-  eleventyConfig.addPassthroughCopy('documentation/apple-touch-icon-precomposed.png');
+  config.addPassthroughCopy('documentation/assets/scripts');
+  config.addPassthroughCopy('documentation/assets/img');
+  config.addPassthroughCopy('documentation/assets/build');
+  config.addPassthroughCopy('documentation/favicon.png');
+  config.addPassthroughCopy('documentation/favicon.ico');
+  config.addPassthroughCopy('documentation/apple-touch-icon-precomposed.png');
 
 
   // ---
   // Liquid config
   // ---
-  eleventyConfig.setLiquidOptions({
+  config.setLiquidOptions({
     dynamicPartials: true,
     strict_filters: true
   });
