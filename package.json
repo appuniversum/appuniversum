@@ -34,6 +34,7 @@
     "cross-env": "^7.0.3",
     "cssesc": "^3.0.0",
     "del-cli": "^4.0.0",
+    "luxon": "^1.25.0",
     "markdown-it": "^12.1.0",
     "markdown-it-attrs": "^4.0.0",
     "node-sass": "^6.0.1",

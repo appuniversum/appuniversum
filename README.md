@@ -12,14 +12,14 @@ To install run `npm install`.
 
 ### Run
 
-* `npm start`: runs a [browser-sync](https://www.browsersync.io/) server and watch for code changes.
+* `npm start`: runs a [browser-sync](https://www.browsersync.io/) server and watches for code changes.
 * `npm run build`: build the site to the `_site` folder.
 
 ### Dependencies
 
 Appuniversum needs the following tools to be installed:
 
-* [Node.js](https://nodejs.org/en/) (v13.9.0)
+* [Node.js](https://nodejs.org/en/) (v14.17.3)
   * If you need to run multiple versions of Node on your computer, we recommend [nvm](https://github.com/creationix/nvm)
 
 ## Need more help?
@@ -34,8 +34,7 @@ This project is a proof of concept and feedback is very much welcome. In order t
 
 ## Credits
 
-- CSS architecture guided by ideas from [Ygdir](https://github.com/mono-company/ygdir) by [Mono](https://mono.company/).
-- [InuitCSS](https://github.com/inuitcss/inuitcss) by [@csswizardry](https://twitter.com/csswizardry).
+- CSS architecture guided by ideas from [InuitCSS](https://github.com/inuitcss/inuitcss) by [@csswizardry](https://twitter.com/csswizardry).
 
 ## License
 
