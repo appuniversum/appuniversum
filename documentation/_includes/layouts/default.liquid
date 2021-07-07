@@ -13,7 +13,7 @@ layout: base
       </div>
       <p class="au-c-brand__logotype">Vlaanderen</p>
     </div>
-    <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}/" class="au-c-header__title au-c-header__title--link">
+    <a href="{% if build.env == "production" %}{{site.path}}{% endif %}/" class="au-c-header__title au-c-header__title--link">
       Appuniversum
     </a>
     <a href="#main" class="au-c-header__skiplink">Naar de hoofdinhoud</a>
