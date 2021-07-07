@@ -5,7 +5,7 @@
       <ul class="au-c-list-navigation">
         {% for item in nav.general %}
         <li class="au-c-list-navigation__item au-c-list-navigation__item--section">
-          <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+          <a href="{% if build.env == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
         </li>
         {% endfor %}
 
@@ -16,7 +16,7 @@
           <ul class="au-c-list-navigation">
             {% for item in nav.documentation %}
             <li class="au-c-list-navigation__item">
-              <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+              <a href="{% if build.env == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -29,7 +29,7 @@
           <ul class="au-c-list-navigation">
             {% for item in nav.foundation %}
             <li class="au-c-list-navigation__item ">
-              <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+              <a href="{% if build.env == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -42,7 +42,7 @@
           <ul class="au-c-list-navigation">
             {% for item in nav.objects %}
             <li class="au-c-list-navigation__item ">
-              <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+              <a href="{% if build.env == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -55,7 +55,7 @@
           <ul class="au-c-list-navigation">
             {% for item in nav.utilities %}
             <li class="au-c-list-navigation__item ">
-              <a href="{% if project.environment == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
+              <a href="{% if build.env == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
             </li>
             {% endfor %}
           </ul>
