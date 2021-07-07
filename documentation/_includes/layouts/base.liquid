@@ -13,7 +13,11 @@
     {% comment %}
     Stylesheets
     {% endcomment %}
+    {% if project.environment == "development" %}
     <link rel="stylesheet" href="{{ '/assets/styles/screen.css' | url }}">
+    {% else %}
+    <link rel="stylesheet" href="{{site.path}}{{ '/assets/styles/screen.css' | url }}">
+    {% endif %}
 
     {% comment %}
     Favicons
