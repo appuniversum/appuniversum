@@ -41,8 +41,6 @@
 //   .au-u-3-4
 //   .au-u-2-3
 
-@use "sass:math";
-
 $au-fractions: 1 2 3 4 5 !default;
 
 // Optionally, Appuniversum can generate classes to offset items by a certain width.
@@ -85,7 +83,7 @@ $au-widths-breakpoint-separator: \@ !default;
 
       // Build a class in the format `.u-3/4[@<breakpoint>]`.
       .au-u-#{$numerator}#{$au-widths-delimiter}#{$denominator}#{$breakpoint} {
-        width: math.div($numerator, $denominator) * 100% !important;
+        width: ($numerator / $denominator) * 100% !important;
       }
 
       @if ($au-offsets == true) {
@@ -97,13 +95,13 @@ $au-widths-breakpoint-separator: \@ !default;
         .au-u-push-#{$numerator}#{$au-widths-delimiter}#{$denominator}#{$breakpoint} {
           position: relative !important;
           right: auto !important; /* [1] */
-          left: math.div($numerator, $denominator) * 100% !important;
+          left: ($numerator / $denominator) * 100% !important;
         }
 
         // Build a class in the format `.u-pull-5/6[@<breakpoint>]`.
         .au-u-pull-#{$numerator}#{$au-widths-delimiter}#{$denominator}#{$breakpoint} {
           position: relative !important;
-          right: math.div($numerator, $denominator) * 100% !important;
+          right: ($numerator / $denominator) * 100% !important;
           left: auto !important; /* [1] */
         }
       }
