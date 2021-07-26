@@ -20,10 +20,12 @@ permalink: "/utilities/spacing/"
 
 ## Sizing
 
-`.au-u-margin-top-xsmall`
+`.au-u-margin-top-none`
+`.au-u-margin-top-tiny`
 `.au-u-margin-top-small`
-`.au-u-margin-top-medium`
+`.au-u-margin-top`
 `.au-u-margin-top-large`
+`.au-u-margin-top-huge`
 
 ## Responsive
 
