@@ -109,6 +109,12 @@
         "contrast-value": "$au-blue-100 or lower"
       },
       {
+        "name": "$au-blue-800",
+        "value": "#004099",
+        "contrast": "#EDF6FF",
+        "contrast-value": "$au-blue-100 or lower"
+      },
+      {
         "name": "$au-blue-900",
         "value": "#073261",
         "contrast": "#EDF6FF",
