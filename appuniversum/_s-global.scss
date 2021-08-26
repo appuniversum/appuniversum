@@ -72,11 +72,13 @@ $au-region-breakpoint: medium;
 // UI
 // ---
 // Globals
-$au-radius: .4rem;
+$au-radius: .3rem;
 $au-border: .2rem;
-$au-outline-border: $au-border;
-$au-outline-border-style: dashed;
-$au-outline: $au-outline-border $au-outline-border-style $au-yellow-400;
+$au-outline-border: .3rem;
+$au-outline-border-style: solid;
+$au-outline: $au-outline-border $au-outline-border-style rgba($au-blue-600,.65);
+$au-outline-offset: .2rem;
+$au-outline-offset-negative: -.3rem;
 
 
 // Transitions

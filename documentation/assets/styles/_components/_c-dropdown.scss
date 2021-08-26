@@ -99,7 +99,7 @@ $au-dropdown-hover-color       : $au-blue-600 !default;
   }
 
   &:focus {
-    outline: $au-outline-border*.5 dashed $au-gray-300;
-    outline-offset: -$au-outline-border * 2;
+    outline: $au-outline;
+    outline-offset: $au-outline-offset-negative;
   }
 }
