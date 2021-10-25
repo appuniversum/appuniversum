@@ -2,17 +2,6 @@
    #PAGE
    ========================================================================== */
 
-/* Variables
-   ========================================================================== */
-
-$au-page-bg                  : $au-white !default;
-$au-select-text-color        : $au-gray-900  !default;
-$au-select-text-bg           : $au-blue-200  !default;
-
-
-/* Elements
-   ========================================================================== */
-
 /**
  * Simple page-level setup.
  *
@@ -23,25 +12,25 @@ $au-select-text-bg           : $au-blue-200  !default;
  */
 
 html {
-  font-family: $au-font;
+  font-family: var(--au-font);
   font-size: 62.5%; /* [4] */
   min-height: 100%; /* [3] */
-  background-color: $au-page-bg;
+  background-color: var(--au-page-bg);
   text-rendering: optimizeLegibility;
   -webkit-overflow-scrolling: touch;
 }
 
 body {
-  font-size: $au-global-font-size; /* [4] */
-  line-height: $au-global-line-height; /* [1] */
+  font-size: var(--au-global-font-size); /* [4] */
+  line-height: var(--au-global-line-height); /* [1] */
 }
 
 ::-moz-selection {
-  color: $au-select-text-color;
-  background-color: $au-select-text-bg;
+  color: var(--au-select-text-color);
+  background-color: var(--au-select-text-bg);
 }
 
 ::selection {
-  color: $au-select-text-color;
-  background-color: $au-select-text-bg;
+  color: var(--au-select-text-color);
+  background-color: var(--au-select-text-bg);
 }

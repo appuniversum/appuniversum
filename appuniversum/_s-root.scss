@@ -46,8 +46,10 @@
   --au-light: #{$au-light};
   --au-regular: #{$au-regular};
   --au-medium: #{$au-medium};
-  --au-medium: #{$au-bold};
+  --au-bold: #{$au-bold};
   --au-base: #{$au-base};
+  --au-tiny: #{$au-tiny};
+  --au-small: #{$au-small};
   --au-h6: #{$au-h6};
   --au-h5: #{$au-h5};
   --au-h4: #{$au-h4};
@@ -55,21 +57,10 @@
   --au-h2: #{$au-h2};
   --au-h1: #{$au-h1};
 
-  // Spacing units
-  --au-unit-tiny: #{$au-unit-tiny};
-  --au-unit-small: #{$au-unit-small};
-  --au-unit: #{$au-unit};
-  --au-unit-large: #{$au-unit-large};
-  --au-unit-huge: #{$au-unit-huge};
-
-  // Objects settings
-  --au-layout-width: #{$au-layout-width};
-  --au-layout-width-small: #{$au-layout-width-small};
-  --au-layout-width-large: #{$au-layout-width-large};
-  --au-layout-breakpoint: #{$au-layout-breakpoint};
-  --au-region-breakpoint: #{$au-region-breakpoint};
-
   // UI
+  --au-page-bg: #{$au-page-bg};
+  --au-select-text-color: #{$au-select-text-color};
+  --au-select-text-bg: #{$au-select-text-bg};
   --au-radius: #{$au-radius};
   --au-border: #{$au-border};
   --au-outline-border: #{$au-outline-border};
