@@ -23,6 +23,10 @@
       "url": "/guidelines/architecture/"
     },
     {
+      "title": "Imports and variables",
+      "url": "/guidelines/imports-and-variables/"
+    },
+    {
       "title": "Browser support",
       "url": "/guidelines/browser-support/"
     }
