@@ -14,10 +14,10 @@ $au-headings: (
 );
 
 $au-font-weights: (
-  'light': $au-light,
-  'regular': $au-regular,
-  'medium': $au-medium,
-  'bold': $au-bold
+  'light': var(--au-light),
+  'regular': var(--au-regular),
+  'medium': var(--au-medium),
+  'bold': var(--au-bold)
 );
 
 
