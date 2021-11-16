@@ -97,6 +97,12 @@
         "contrast-value": "--au-blue-700 or higher"
       },
       {
+        "name": "--au-blue-500",
+        "value": "#64A0E2",
+        "contrast": "#073261",
+        "contrast-value": "--au-blue-900 or higher"
+      },
+      {
         "name": "--au-blue-600",
         "value": "#0F6FD7",
         "contrast": "#EDF6FF",

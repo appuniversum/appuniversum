@@ -83,6 +83,7 @@ Appuniversum provides a set of CSS variables to easily tweak it's appearance wit
   --au-blue-100: #{$au-blue-100};
   --au-blue-200: #{$au-blue-200};
   --au-blue-300: #{$au-blue-300};
+  --au-blue-500: #{$au-blue-500};
   --au-blue-600: #{$au-blue-600};
   --au-blue-700: #{$au-blue-700};
   --au-blue-800: #{$au-blue-800};
@@ -132,6 +133,7 @@ Appuniversum provides a set of CSS variables to easily tweak it's appearance wit
   --au-select-text-bg: #{$au-select-text-bg};
   --au-radius: #{$au-radius};
   --au-border: #{$au-border};
+  --au-outline-color: #{$au-blue-500};
   --au-outline-border: #{$au-outline-border};
   --au-outline-border-style: #{$au-outline-border-style};
   --au-outline: #{$au-outline};
