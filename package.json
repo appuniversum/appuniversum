@@ -2,11 +2,17 @@
   "name": "@appuniversum/appuniversum",
   "version": "0.2.1",
   "description": "A design universe for Flanders GOV applications.",
-  "main": "appuniversum.scss",
+  "homepage": "https://github.com/appuniversum/appuniversum#readme",
+  "bugs": {
+    "url": "https://github.com/appuniversum/appuniversum/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/appuniversum/appuniversum.git"
   },
+  "license": "MIT",
+  "author": "",
+  "main": "appuniversum.scss",
   "scripts": {
     "start": "run-s dev",
     "css:build": "sass --style expanded --embed-source-map appuniversum.scss appuniversum.css",
@@ -20,12 +26,15 @@
     "clean": "del-cli _site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/appuniversum/appuniversum/issues"
-  },
-  "homepage": "https://github.com/appuniversum/appuniversum#readme",
+  "browserslist": [
+    "last 1 Chrome version",
+    "last 1 Android version",
+    "last 1 Firefox version",
+    "last 1 FirefoxAndroid version",
+    "last 1 Safari version",
+    "last 1 iOS version",
+    "last 1 Edge version"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
@@ -39,16 +48,27 @@
     "markdown-it": "^12.2.0",
     "markdown-it-attrs": "^4.1.0",
     "npm-run-all": "^4.1.5",
+    "release-it": "^14.2.1",
+    "release-it-lerna-changelog": "^3.1.0",
     "require-dir": "^1.2.0",
     "sass": "^1.43.4"
   },
-  "browserslist": [
-    "last 1 Chrome version",
-    "last 1 Android version",
-    "last 1 Firefox version",
-    "last 1 FirefoxAndroid version",
-    "last 1 Safari version",
-    "last 1 iOS version",
-    "last 1 Edge version"
-  ]
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "release-it": {
+    "plugins": {
+      "release-it-lerna-changelog": {
+        "infile": "CHANGELOG.md",
+        "launchEditor": true
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "GITHUB_AUTH"
+    }
+  }
 }
