@@ -12,22 +12,18 @@
  *   .au-u-bold {}
  */
 
-/* Variables
-  ========================================================================== */
+.au-u-light {
+  font-weight: var(--au-light) !important;
+}
 
-$au-font-weights: (
-  'light': var(--au-light),
-  'regular': var(--au-regular),
-  'medium': var(--au-medium),
-  'bold': var(--au-bold)
-) !default;
+.au-u-regular {
+  font-weight: var(--au-regular) !important;
+}
 
+.au-u-medium {
+  font-weight: var(--au-medium) !important;
+}
 
-/* Generate utility classes
-  ========================================================================== */
-
-@each $font-weight-namespace, $font-weight in $au-font-weights {
-  .au-u-#{$font-weight-namespace} {
-    font-weight: $font-weight !important;
-  }
+.au-u-bold {
+  font-weight: var(--au-bold) !important;
 }

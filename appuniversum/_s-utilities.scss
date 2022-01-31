@@ -2,25 +2,6 @@
 // #GENERATE UTILITIES
 // ==================================
 
-// Headings
-// ---
-$au-headings: (
-  'h1': $au-h1,
-  'h2': $au-h2,
-  'h3': $au-h3,
-  'h4': $au-h4,
-  'h5': $au-h5,
-  'h6': $au-h6
-);
-
-$au-font-weights: (
-  'light': var(--au-light),
-  'regular': var(--au-regular),
-  'medium': var(--au-medium),
-  'bold': var(--au-bold)
-);
-
-
 // Widths
 // ---
 $au-fractions: 1 2 3 4 5 6;

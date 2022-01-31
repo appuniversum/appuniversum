@@ -16,7 +16,7 @@ The below box is hidden only visually, but is <a href="http://snook.ca/archives/
   <p>I get picked up by screen readers.</p>
 </div>
 
-<hr>
+<hr />
 
 ## Both hidden visually and for screenreaders
 
@@ -28,7 +28,7 @@ The below box is hidden both visually as for screen readers.
   <p>You cannot see nor read me with a screenreader, except for in the code.</p>
 </div>
 
-<hr>
+<hr />
 
 ## Responsive hiding
 

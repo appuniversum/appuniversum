@@ -8,9 +8,9 @@ permalink: "/utilities/align-text/"
 
 <div class="au-o-box au-d-component">
   <p class="au-u-h4 au-u-text-left">.au-u-text-left</p>
-  <hr>
+  <hr />
   <p class="au-u-h4 au-u-text-right">.au-u-text-right</p>
-  <hr>
+  <hr />
   <p class="au-u-h4 au-u-text-center">.au-u-text-center</p>
 </div>
 
@@ -20,11 +20,11 @@ All text align utilities are available in the breakpoints you set in `_s-global.
 
 <div class="au-o-box au-d-component">
   <p class="au-u-h4 au-u-text-right@xsmall">.au-u-text-right@xsmall</p>
-  <hr>
+  <hr />
   <p class="au-u-h4 au-u-text-right@small">.au-u-text-right@small</p>
-  <hr>
+  <hr />
   <p class="au-u-h4 au-u-text-right@medium">.au-u-text-right@medium</p>
-  <hr>
+  <hr />
   <p class="au-u-h4 au-u-text-right@large">.au-u-text-right@large</p>
 </div>
 

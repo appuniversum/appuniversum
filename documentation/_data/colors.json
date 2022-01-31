@@ -5,7 +5,7 @@
       {
         "name": "--au-white",
         "value": "#FFFFFF",
-        "contrast": "#545961",
+        "contrast": "#687483",
         "contrast-value": "--au-gray-700 or higher"
       }
     ]
@@ -15,62 +15,44 @@
     "colors": [
       {
         "name": "--au-gray-100",
-        "value": "#F4F5F6",
-        "contrast": "#545961",
+        "value": "#F7F9FC",
+        "contrast": "#687483",
         "contrast-value": "--au-gray-700 or higher"
       },
       {
         "name": "--au-gray-200",
-        "value": "#E6E8EB",
-        "contrast": "#545961",
-        "contrast-value": "--au-gray-700 or higher"
+        "value": "#e8ebee",
+        "contrast": "#333332",
+        "contrast-value": "--au-gray-900 or higher"
       },
       {
         "name": "--au-gray-300",
-        "value": "#CCD1D9",
-        "contrast": "#545961",
-        "contrast-value": "--au-gray-700 or higher"
-      },
-      {
-        "name": "--au-gray-400",
-        "value": "#A1ABBA",
-        "contrast": "#212326",
+        "value": "#CFD5DD",
+        "contrast": "#333332",
         "contrast-value": "--au-gray-900 or higher"
       },
       {
         "name": "--au-gray-500",
-        "value": "#8E98A6",
-        "contrast": "#212326",
-        "contrast-value": "--au-gray-900 or higher"
-      },
-      {
-        "name": "--au-gray-600",
-        "value": "#69717C",
-        "contrast": "#F4F5F6",
-        "contrast-value": "--au-gray-100 or lower"
+        "value": "#8695A8",
+        "contrast": "#000000",
+        "contrast-value": "non-textual elements only"
       },
       {
         "name": "--au-gray-700",
-        "value": "#545961",
-        "contrast": "#F4F5F6",
-        "contrast-value": "--au-gray-100 or lower"
-      },
-      {
-        "name": "--au-gray-800",
-        "value": "#2A2D31",
-        "contrast": "#F4F5F6",
+        "value": "#687483",
+        "contrast": "#F7F9FC",
         "contrast-value": "--au-gray-100 or lower"
       },
       {
         "name": "--au-gray-900",
-        "value": "#212326",
-        "contrast": "#F4F5F6",
+        "value": "#333332",
+        "contrast": "#F7F9FC",
         "contrast-value": "--au-gray-100 or lower"
       },
       {
         "name": "--au-gray-1000",
         "value": "#000000",
-        "contrast": "#F4F5F6",
+        "contrast": "#F7F9FC",
         "contrast-value": "--au-gray-100 or lower"
       }
     ]
@@ -79,51 +61,33 @@
     "group": "Blue",
     "colors": [
       {
-        "name": "--au-blue-100",
-        "value": "#EDF6FF",
-        "contrast": "#0E5EB8",
-        "contrast-value": "--au-blue-700 or higher"
-      },
-      {
         "name": "--au-blue-200",
-        "value": "#DCECFD",
-        "contrast": "#0E5EB8",
+        "value": "#E4EBF5",
+        "contrast": "#0055CC",
         "contrast-value": "--au-blue-700 or higher"
       },
       {
         "name": "--au-blue-300",
-        "value": "#C1DDFB",
-        "contrast": "#0E5EB8",
-        "contrast-value": "--au-blue-700 or higher"
-      },
-      {
-        "name": "--au-blue-500",
-        "value": "#64A0E2",
-        "contrast": "#073261",
+        "value": "#B2CCEF",
+        "contrast": "#003B8E",
         "contrast-value": "--au-blue-900 or higher"
       },
       {
-        "name": "--au-blue-600",
-        "value": "#0F6FD7",
-        "contrast": "#EDF6FF",
-        "contrast-value": "--au-blue-100 or lower"
+        "name": "--au-blue-500",
+        "value": "#5990DE",
+        "contrast": "#000000",
+        "contrast-value": "non-textual elements only"
       },
       {
         "name": "--au-blue-700",
-        "value": "#0E5EB8",
-        "contrast": "#EDF6FF",
-        "contrast-value": "--au-blue-100 or lower"
-      },
-      {
-        "name": "--au-blue-800",
-        "value": "#004099",
-        "contrast": "#EDF6FF",
+        "value": "#0055CC",
+        "contrast": "#F4F7FB",
         "contrast-value": "--au-blue-100 or lower"
       },
       {
         "name": "--au-blue-900",
-        "value": "#073261",
-        "contrast": "#EDF6FF",
+        "value": "#003B8E",
+        "contrast": "#F4F7FB",
         "contrast-value": "--au-blue-100 or lower"
       }
     ]
@@ -132,40 +96,51 @@
     "group": "Yellow",
     "colors": [
       {
-        "name": "--au-yellow-100",
-        "value": "#FFF9D5",
-        "contrast": "#473D21",
-        "contrast-value": "--au-yellow-700 or higher"
-      },
-      {
-        "name": "--au-yellow-200",
-        "value": "#FFF29B",
-        "contrast": "#473D21",
-        "contrast-value": "--au-yellow-700 or higher"
-      },
-      {
-        "name": "--au-yellow-300",
-        "value": "#FEE539",
-        "contrast": "#473D21",
-        "contrast-value": "--au-yellow-700 or higher"
-      },
-      {
         "name": "--au-yellow-400",
         "value": "#FFC515",
         "contrast": "#473D21",
-        "contrast-value": "--au-yellow-900 or higher"
+        "contrast-value": "non-textual elements only"
+      }
+    ]
+  },
+  {
+    "group": "Orange",
+    "colors": [
+      {
+        "name": "--au-orange-200",
+        "value": "#fff9e8",
+        "contrast": "#9F5804",
+        "contrast-value": "--au-orange-700 or higher"
       },
       {
-        "name": "--au-yellow-600",
-        "value": "#7F6E3B",
-        "contrast": "#FFF9D5",
-        "contrast-value": "--au-yellow-100 or lower"
+        "name": "--au-orange-300",
+        "value": "#FFEEB9",
+        "contrast": "#9F5804",
+        "contrast-value": "--au-orange-700 or higher"
       },
       {
-        "name": "--au-yellow-900",
-        "value": "#473D21",
-        "contrast": "#FFF9D5",
-        "contrast-value": "--au-yellow-100 or lower"
+        "name": "--au-orange-400",
+        "value": "#FFE49C",
+        "contrast": "#473D21",
+        "contrast-value": "--au-gray-900 or higher"
+      },
+      {
+        "name": "--au-orange-500",
+        "value": "#FFA10A",
+        "contrast": "#473D21",
+        "contrast-value": "non-textual elements only"
+      },
+      {
+        "name": "--au-orange-600",
+        "value": "#D07B06",
+        "contrast": "#000000",
+        "contrast-value": "non-textual elements only"
+      },
+      {
+        "name": "--au-orange-700",
+        "value": "#9F5804",
+        "contrast": "#fff9e8",
+        "contrast-value": "--au-orange-100 or lower"
       }
     ]
   },
@@ -173,39 +148,33 @@
     "group": "Red",
     "colors": [
       {
-        "name": "--au-red-100",
-        "value": "#FCF3F3",
-        "contrast": "#AB1F1F",
-        "contrast-value": "--au-red-700 or higher"
-      },
-      {
         "name": "--au-red-200",
-        "value": "#F7E3E3",
-        "contrast": "#AB1F1F",
+        "value": "#FBEDED",
+        "contrast": "#AA2729",
         "contrast-value": "--au-red-700 or higher"
       },
       {
-        "name": "--au-red-500",
-        "value": "#FF4141",
-        "contrast": "#470000",
+        "name": "--au-red-300",
+        "value": "#F4C8C9",
+        "contrast": "#AA2729",
+        "contrast-value": "--au-red-700 or higher"
+      },
+      {
+        "name": "--au-red-400",
+        "value": "#F1AEAE",
+        "contrast": "#333332",
         "contrast-value": "--au-red-900 or higher"
       },
       {
         "name": "--au-red-600",
-        "value": "#D92626",
-        "contrast": "#FCF3F3",
+        "value": "#D2373C",
+        "contrast": "#FDF7F7",
         "contrast-value": "--au-red-100 or lower"
       },
       {
         "name": "--au-red-700",
-        "value": "#AB1F1F",
-        "contrast": "#FCF3F3",
-        "contrast-value": "--au-red-100 or lower"
-      },
-      {
-        "name": "--au-red-900",
-        "value": "#470000",
-        "contrast": "#FCF3F3",
+        "value": "#AA2729",
+        "contrast": "#FDF7F7",
         "contrast-value": "--au-red-100 or lower"
       }
     ]
@@ -214,40 +183,87 @@
     "group": "Green",
     "colors": [
       {
-        "name": "--au-green-100",
-        "value": "#F7FAE5",
-        "contrast": "#637A0B",
+        "name": "--au-green-200",
+        "value": "#ecf6ee",
+        "contrast": "#007A37",
         "contrast-value": "--au-green-700 or higher"
       },
       {
-        "name": "--au-green-200",
-        "value": "#ECF2CD",
-        "contrast": "#5F750B",
-        "contrast-value": "--au-green-700 or higher"
+        "name": "--au-green-300",
+        "value": "#C5E5CC",
+        "contrast": "#323D08",
+        "contrast-value": "--au-gray-900 or higher"
       },
       {
         "name": "--au-green-400",
-        "value": "#B3E000",
+        "value": "#b1dcbb",
         "contrast": "#323D08",
-        "contrast-value": "--au-green-900 or higher"
+        "contrast-value": "--au-gray-900 or higher"
       },
       {
         "name": "--au-green-500",
-        "value": "#8BAE00",
-        "contrast": "#323D08",
-        "contrast-value": "--au-green-900 or higher"
+        "value": "#009E47",
+        "contrast": "#000000",
+        "contrast-value": "non-textual elements only"
       },
       {
         "name": "--au-green-700",
-        "value": "#5F750B",
-        "contrast": "#F7FAE5",
+        "value": "#007A37",
+        "contrast": "#F8FCF9",
         "contrast-value": "--au-green-100 or lower"
+      }
+    ]
+  },
+  {
+    "group": "VL secondary",
+    "colors": [
+      {
+        "name": "--vl-lime-100",
+        "value": "#A3CC00",
+        "contrast": "#000000",
+        "contrast-value": "non-textual elements only"
       },
       {
-        "name": "--au-green-900",
-        "value": "#323D08",
-        "contrast": "#F7FAE5",
-        "contrast-value": "--au-green-100 or lower"
+        "name": "--vl-lime-120",
+        "value": "#6F8B00",
+        "contrast": "#000000",
+        "contrast-value": "non-textual elements only"
+      },
+      {
+        "name": "--vl-brick-100",
+        "value": "#D53D5E",
+        "contrast": "#000000",
+        "contrast-value": "--au-gray-100 or lower"
+      },
+      {
+        "name": "--vl-brick-120",
+        "value": "#85273B",
+        "contrast": "#FFFFFF",
+        "contrast-value": "--au-gray-100 or lower"
+      },
+      {
+        "name": "--vl-chocolate-100",
+        "value": "#D26E25",
+        "contrast": "#000000",
+        "contrast-value": "non-textual elements only"
+      },
+      {
+        "name": "--vl-chocolate-120",
+        "value": "#904E1D",
+        "contrast": "#FFFFFF",
+        "contrast-value": "--au-gray-100 or lower"
+      },
+      {
+        "name": "--vl-picton-100",
+        "value": "#32B1E9",
+        "contrast": "#000000",
+        "contrast-value": "non-textual elements only"
+      },
+      {
+        "name": "--vl-picton-120",
+        "value": "#16465B",
+        "contrast": "#FFFFFF",
+        "contrast-value": "--au-gray-100 or lower"
       }
     ]
   }
