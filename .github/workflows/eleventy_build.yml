@@ -15,7 +15,6 @@ jobs:
       - name: Build
         uses: TartanLlama/actions-eleventy@master
         with:
-          args: cross-env ELEVENTY_ENV=production
           install_dependencies: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
