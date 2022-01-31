@@ -49,6 +49,7 @@ Or include the partials in your projects and choose the parts you want to use.
 @import "appuniversum/u-align-text";
 @import "appuniversum/u-background";
 @import "appuniversum/u-break-word";
+@import "appuniversum/u-flex";
 @import "appuniversum/u-font-weights";
 @import "appuniversum/u-font-family";
 @import "appuniversum/u-headings";
