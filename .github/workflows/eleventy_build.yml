@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@master
-      - name: Build
-        uses: TartanLlama/actions-eleventy@master
+      - name: Compile
+        uses: elstudio/actions-js-build/build@v2
         with:
-          install_dependencies: true
+          args: run deploy
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
