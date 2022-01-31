@@ -15,10 +15,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: Compile
-        uses: elstudio/actions-js-build/build@v3
-        with:
-          args: run deploy
+      - run: npm install
+      - run: npm run deploy
       - name: Deploy
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
