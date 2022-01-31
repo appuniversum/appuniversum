@@ -5,25 +5,18 @@ on:
     - master
   pull_request:
     branches:
-    - master
+    - development
 
 jobs:
   build_deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 12
-      - name: Compile
-        uses: elstudio/actions-js-build/build@v2
-        with:
-          args: run deploy
+      - uses: actions/checkout@master
+      - name: Build
+        uses: TartanLlama/actions-eleventy@master
       - name: Deploy
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          target_branch: gh-pages
-          build_dir: _site
-        env:
-          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          publish_dir: _site
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
