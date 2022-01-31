@@ -17,8 +17,9 @@ All color combinations should adhere to the [WCAG 2.0 AA standard](https://www.w
   <ul class="au-o-grid au-o-grid--small u-margin-bottom">
     {% for color in group.colors %}<li class="au-o-grid__item au-u-1-2 au-u-1-4@small">
       <div class="au-o-box au-o-box--flush">
-        <div class="au-d-swatch au-d-swatch--yellow" style="background-color: {{ color.value }}">
+        <div class="au-d-swatch" style="background-color: {{ color.value }}">
           <p class="au-d-swatch__name" style="color: {{ color.contrast }}">{{ color.name }}</p>
+          <p class="au-d-swatch__name" style="color: {{ color.contrast }}">{{ color.value }}</p>
           <p class="au-d-swatch__contrast" style="color: {{ color.contrast }}">AA contrast:<br> {{color.contrast-value}}
         </div>
       </div>

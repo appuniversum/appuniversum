@@ -15,7 +15,6 @@ A CSS framework for Flanders government applications.
 - promote the coöperation between different teams working on Flanders GOV applications
 
 ## References:
-- [Webuniversum V3](https://overheid.vlaanderen.be/webuniversum/v3/)
-- [LNE webcomponents](https://webcomponenten.omgeving.vlaanderen.be/doc/index.html)
+- [Webuniversum](https://overheid.vlaanderen.be/webuniversum/v3/)
 
 </div>

@@ -43,34 +43,34 @@ $au-content-link-underline-hover   : $au-blue-300 !default;
   }
 
   > h1 {
-    @include au-font-size($au-h3);
+    @include au-font-size(var(--au-h1-small));
   }
 
   > h2 {
-    @include au-font-size($au-h4);
+    @include au-font-size(var(--au-h2-small));
     font-weight: $au-medium;
   }
 
   > h3 {
-    @include au-font-size($au-h5);
+    @include au-font-size(var(--au-h3-small));
     font-weight: $au-medium;
   }
 
   > ul h3 {
-    @include au-font-size($au-h6);
+    @include au-font-size(var(--au-h6));
     font-weight: $au-medium;
   }
 
   > h4,
   > h5,
   > h6 {
-    @include au-font-size($au-h6);
+    @include au-font-size(var(--au-h6));
   }
 
   > p,
   > ul,
   > ol {
-    @include au-font-size($au-base,1.5);
+    @include au-font-size(var(--au-base),1.5);
   }
 
   hr {
@@ -97,7 +97,7 @@ $au-content-link-underline-hover   : $au-blue-300 !default;
   }
 
   > blockquote p {
-    @include au-font-size($au-h5,1.5);
+    @include au-font-size(var(--au-h5),1.5);
     margin-bottom: 0;
   }
 
@@ -112,7 +112,7 @@ $au-content-link-underline-hover   : $au-blue-300 !default;
   }
 
   > blockquote p + p {
-    @include au-font-size($au-base,1.5);
+    @include au-font-size(var(--au-base),1.5);
     margin-top: $au-unit-small;
     font-weight: $au-medium;
   }
@@ -239,7 +239,7 @@ $au-content-link-underline-hover   : $au-blue-300 !default;
   }
 
   table {
-    @include au-font-size($au-base);
+    @include au-font-size(var(--au-base));
     width: 100%;
     border: .1rem solid $au-gray-300;
   }
@@ -275,31 +275,31 @@ $au-content-link-underline-hover   : $au-blue-300 !default;
     }
 
     > h1 {
-      @include au-font-size($au-h2);
+      @include au-font-size(var(--au-h2));
     }
 
     > h2 {
-      @include au-font-size($au-h4);
+      @include au-font-size(var(--au-h4));
     }
 
     > h3 {
-      @include au-font-size($au-h5);
+      @include au-font-size(var(--au-h5));
     }
 
     > h4,
     > h5,
     > h6 {
-      @include au-font-size($au-h6);
+      @include au-font-size(var(--au-h6));
     }
 
     > p,
     > ul,
     > ol {
-      @include au-font-size($au-base,1.5);
+      @include au-font-size(var(--au-base),1.5);
     }
 
     > blockquote p {
-      @include au-font-size($au-h5,1.5);
+      @include au-font-size(var(--au-h5),1.5);
     }
 
   }
@@ -315,17 +315,17 @@ $au-content-link-underline-hover   : $au-blue-300 !default;
     }
 
     > h1 {
-      @include au-font-size($au-h1);
+      @include au-font-size(var(--au-h1));
     }
 
     > p,
     > ul,
     > ol {
-      @include au-font-size($au-h6);
+      @include au-font-size(var(--au-h6));
     }
 
     > blockquote p {
-      @include au-font-size($au-h4);
+      @include au-font-size(var(--au-h4));
     }
   }
 }
