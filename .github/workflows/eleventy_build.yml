@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '14'
       - name: Compile
-        uses: elstudio/actions-js-build/build@v4
+        uses: elstudio/actions-js-build/build@v3
         with:
           args: run deploy
       - name: Deploy
