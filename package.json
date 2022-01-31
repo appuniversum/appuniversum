@@ -39,9 +39,9 @@
   "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.2",
-    "clean-css": "^5.2.2",
-    "clean-css-cli": "^5.5.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "clean-css": "^5.2.4",
+    "clean-css-cli": "^5.5.2",
     "cross-env": "^7.0.3",
     "cssesc": "^3.0.0",
     "del-cli": "^4.0.1",
