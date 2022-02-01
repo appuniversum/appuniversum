@@ -96,8 +96,8 @@
     "group": "Yellow",
     "colors": [
       {
-        "name": "--au-yellow-400",
-        "value": "#FFC515",
+        "name": "--au-yellow-300",
+        "value": "#FFE615",
         "contrast": "#473D21",
         "contrast-value": "non-textual elements only"
       }
