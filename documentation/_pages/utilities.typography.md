@@ -54,6 +54,12 @@ permalink: "/utilities/typography/"
   <p class="au-u-para au-u-muted">.au-u-muted</p>
   <hr />
   <p class="au-u-para au-u-italic">.au-u-italic</p>
+  <hr />
+  <p class="au-u-para au-u-success">.au-u-success</p>
+  <hr />
+  <p class="au-u-para au-u-warning">.au-u-warning</p>
+  <hr />
+  <p class="au-u-para au-u-error">.au-u-error</p>
 </div>
 
 ## Font family

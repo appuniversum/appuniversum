@@ -42,3 +42,16 @@
 .au-u-italic {
   font-style: italic !important;
 }
+
+// States
+.au-u-success {
+  color: var(--au-green-700) !important;
+}
+
+.au-u-warning {
+  color: var(--au-orange-700) !important;
+}
+
+.au-u-error {
+  color: var(--au-red-700) !important;
+}
