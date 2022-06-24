@@ -31,10 +31,14 @@
       "url": "/guidelines/browser-support/"
     }
   ],
-  "foundation": [
+  "variables": [
     {
-      "title": "Colors",
-      "url": "/foundation/colors/"
+      "title": "Base colors",
+      "url": "/variables/colors/"
+    },
+    {
+      "title": "Semantic colors",
+      "url": "/variables/semantic-colors/"
     }
   ],
   "objects": [

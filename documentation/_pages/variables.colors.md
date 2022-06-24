@@ -1,7 +1,7 @@
 ---
-title: "Foundation: Colors"
+title: "Variables: Colors"
 layout: documentation
-permalink: "/foundation/colors/"
+permalink: "/Variables/colors/"
 ---
 
 ​<div class="au-c-content">
