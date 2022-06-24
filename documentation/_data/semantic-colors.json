@@ -1,0 +1,42 @@
+[
+  {
+    "group": "Page",
+    "colors": [
+      {
+        "name": "--au-page-bg",
+        "value": "#FFFFFF",
+        "contrast": "#687483",
+        "contrast-value": "--au-gray-700 or higher"
+      },
+      {
+        "name": "--au-select-text-color",
+        "value": "#333332",
+        "contrast": "#F7F9FC",
+        "contrast-value": "--au-gray-100 or lower"
+      },
+      {
+        "name": "--au-select-text-bg",
+        "value": "#E4EBF5",
+        "contrast": "#0055CC",
+        "contrast-value": "--au-blue-700 or higher"
+      },
+      {
+        "name": "--au-outline-color",
+        "value": "#5990DE",
+        "contrast": "#000000",
+        "contrast-value": "non-textual elements only"
+      }
+    ]
+  },
+  {
+    "group": "Border",
+    "colors": [
+      {
+        "name": "--au-divider-color",
+        "value": "#e8ebee",
+        "contrast": "#333332",
+        "contrast-value": "--au-gray-900 or higher"
+      }
+    ]
+  }
+]

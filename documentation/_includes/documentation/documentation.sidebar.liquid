@@ -24,10 +24,10 @@
 
         <li class="au-c-list-navigation__item au-c-list-navigation__item--section">
           <h2 class="au-c-list-navigation__section-title">
-            Foundation:
+            Variables:
           </h2>
           <ul class="au-c-list-navigation">
-            {% for item in nav.foundation %}
+            {% for item in nav.variables %}
             <li class="au-c-list-navigation__item ">
               <a href="{% if build.env == "production" %}{{site.path}}{% endif %}{{ item.url }}" class="au-c-list-navigation__link {% if page.url == item.url %} active{% endif %}">{{ item.title }}</a>
             </li>
