@@ -1,7 +1,7 @@
 ---
 title: "Variables: Semantic colors"
 layout: documentation
-permalink: "/Variables/semantic-colors/"
+permalink: "/variables/semantic-colors/"
 ---
 
 ​<div class="au-c-content">

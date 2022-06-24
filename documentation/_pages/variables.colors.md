@@ -1,7 +1,7 @@
 ---
 title: "Variables: Colors"
 layout: documentation
-permalink: "/Variables/colors/"
+permalink: "/variables/colors/"
 ---
 
 ​<div class="au-c-content">
