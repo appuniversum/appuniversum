@@ -20,10 +20,17 @@ $au-main-header-underline-hover   : $au-blue-300 !default;
   position: relative;
   z-index: $au-z-index-alpha;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: $au-main-header-bg;
   box-shadow: 0 1px 3px rgba($au-gray-900, .1), 0 4px 20px rgba($au-gray-900, .035), 0 1px 1px rgba($au-gray-900, .025);
+}
+
+.au-c-header__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .au-c-header__title-group {
