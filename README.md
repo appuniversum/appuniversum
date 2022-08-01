@@ -1,4 +1,6 @@
-# Appuniversum
+# Appuniversum (deprecated)
+
+**This package has been merged in [ember-appuniversum](https://appuniversum.github.io/ember-appuniversum)and is no longer maintained.**
 
 A design universe for Flanders Government applications.
 

@@ -15,3 +15,13 @@
   color: $au-gray-700;
   margin-bottom: $au-unit-small;
 }
+
+.au-d-alert {
+  background-color: var(--au-gray-200);
+  color: var(--au-gray-800);
+  padding: 0 $au-unit-tiny;
+  border-radius: $au-radius;
+  width: 100%;
+  margin: $au-unit-tiny;
+  text-align: center;
+}
